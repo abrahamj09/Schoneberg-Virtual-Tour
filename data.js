@@ -85,6 +85,241 @@ var APP_DATA = {
       ]
     },
     {
+  "id": "2route1",
+  "name": "Plot 2 – Route 1",
+  "levels": [  
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        },
+        {
+          "tileSize": 512,
+          "size": 4096
+        }
+],
+  "faceSize": 4096,
+  "initialViewParameters": {
+    "yaw": 0,
+    "pitch": 0,
+    "fov": 1.3
+  },
+  "linkHotspots": [
+    {
+      "yaw": 0.0,
+      "pitch": 0.1,
+      "rotation": 0,
+      "target": "2route2"
+    },
+    {
+      "yaw": 2.5,
+      "pitch": 0.1,
+      "rotation": 0,
+      "target": "1-2main"
+    }
+  ],
+  "infoHotspots": []
+},
+{
+  "id": "2route2",
+  "name": "Plot 2 – Route 2",
+  "levels": [  
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        },
+        {
+          "tileSize": 512,
+          "size": 4096
+        }
+],
+  "faceSize": 4096,
+  "initialViewParameters": {
+    "yaw": 0,
+    "pitch": 0,
+    "fov": 1.3
+  },
+  "linkHotspots": [
+    {
+      "yaw": 0.0,
+      "pitch": 0.1,
+      "rotation": 0,
+      "target": "2route3"
+    },
+    {
+      "yaw": 3.1,
+      "pitch": 0.1,
+      "rotation": 0,
+      "target": "2route1"
+    }
+  ],
+  "infoHotspots": []
+},
+{
+  "id": "2route3",
+  "name": "Plot 2 – Route 3",
+  "levels": [  
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        },
+        {
+          "tileSize": 512,
+          "size": 4096
+        }
+],
+  "faceSize": 4096,
+  "initialViewParameters": {
+    "yaw": 0,
+    "pitch": 0,
+    "fov": 1.3
+  },
+  "linkHotspots": [
+    {
+      "yaw": 0.0,
+      "pitch": 0.1,
+      "rotation": 0,
+      "target": "2route4"
+    },
+    {
+      "yaw": 3.1,
+      "pitch": 0.1,
+      "rotation": 0,
+      "target": "2route2"
+    }
+  ],
+  "infoHotspots": []
+},
+{
+  "id": "2route4",
+  "name": "Plot 2 – Route 4",
+  "levels": [  
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        },
+        {
+          "tileSize": 512,
+          "size": 4096
+        }
+],
+  "faceSize": 4096,
+  "initialViewParameters": {
+    "yaw": 0,
+    "pitch": 0,
+    "fov": 1.3
+  },
+  "linkHotspots": [
+    {
+      "yaw": 0.0,
+      "pitch": 0.1,
+      "rotation": 0,
+      "target": "2route5"
+    },
+    {
+      "yaw": 3.1,
+      "pitch": 0.1,
+      "rotation": 0,
+      "target": "2route3"
+    }
+  ],
+  "infoHotspots": []
+},
+{
+  "id": "2route5",
+  "name": "Plot 2 – Route 5",
+  "levels": [  
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        },
+        {
+          "tileSize": 512,
+          "size": 4096
+        }
+],
+  "faceSize": 4096,
+  "initialViewParameters": {
+    "yaw": 0,
+    "pitch": 0,
+    "fov": 1.3
+  },
+  "linkHotspots": [
+    {
+      "yaw": 3.1,
+      "pitch": 0.1,
+      "rotation": 0,
+      "target": "2route4"
+    }
+    // optionally: add a link to “road” plot if you have one
+  ],
+  "infoHotspots": []
+}
+    {
       "id": "2-3main",
       "name": "3main",
       "levels": [
