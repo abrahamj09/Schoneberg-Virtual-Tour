@@ -90,7 +90,7 @@ var APP_DATA = {
   "id": "2route1",
   "name": "Plot 2 – Route 1",
   "levels": [  
-  {
+        {
           "tileSize": 256,
           "size": 256,
           "fallbackOnly": true
@@ -138,7 +138,7 @@ var APP_DATA = {
   "id": "2route2",
   "name": "Plot 2 – Route 2",
   "levels": [  
-  {
+        {
           "tileSize": 256,
           "size": 256,
           "fallbackOnly": true
@@ -186,7 +186,7 @@ var APP_DATA = {
   "id": "2route3",
   "name": "Plot 2 – Route 3",
   "levels": [  
-  {
+        {
           "tileSize": 256,
           "size": 256,
           "fallbackOnly": true
@@ -234,7 +234,7 @@ var APP_DATA = {
   "id": "2route4",
   "name": "Plot 2 – Route 4",
   "levels": [  
-  {
+        {
           "tileSize": 256,
           "size": 256,
           "fallbackOnly": true
@@ -282,7 +282,7 @@ var APP_DATA = {
   "id": "2route5",
   "name": "Plot 2 – Route 5",
   "levels": [  
-  {
+        {
           "tileSize": 256,
           "size": 256,
           "fallbackOnly": true
