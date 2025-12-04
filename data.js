@@ -318,7 +318,7 @@ var APP_DATA = {
     // optionally: add a link to “road” plot if you have one
   ],
   "infoHotspots": []
-}
+},
     {
       "id": "2-3main",
       "name": "3main",
