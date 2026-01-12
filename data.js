@@ -70,52 +70,46 @@ var APP_DATA = {
       ],
       "faceSize": 2976,
       "initialViewParameters": {
-        "yaw": -0.476634230131717,
-        "pitch": 0.5899439791757501,
+        "yaw": -0.39043169444333614,
+        "pitch": 0.612212862418394,
         "fov": 1.38217411905719
       },
       "linkHotspots": [
         {
-          "yaw": -0.31605264081647455,
-          "pitch": 1.1514363609649578,
+          "yaw": -0.2749526072015165,
+          "pitch": 1.1584333175493882,
           "rotation": 3.141592653589793,
-          "target": "11-2main_top"
+          "target": "5-2main_top"
         },
         {
-          "yaw": -2.8516052694063063,
-          "pitch": 0.010271351321033961,
+          "yaw": 1.283001507744821,
+          "pitch": 0.02638083936146529,
+          "rotation": 0,
+          "target": "3-2buffer4"
+        },
+        {
+          "yaw": -0.2584180616955081,
+          "pitch": 0.10958862346345022,
+          "rotation": 0,
+          "target": "2-2buffer3"
+        },
+        {
+          "yaw": 2.8425358011887143,
+          "pitch": 0.04390712066450675,
+          "rotation": 0,
+          "target": "1-2buffer2"
+        },
+        {
+          "yaw": -1.8732258825172323,
+          "pitch": 0.07408945460196215,
+          "rotation": 0,
+          "target": "0-2buffer1"
+        },
+        {
+          "yaw": -2.766240777799652,
+          "pitch": 0.09248548073252039,
           "rotation": 3.141592653589793,
-          "target": "1-2route1"
-        },
-        {
-          "yaw": -2.557744688746517,
-          "pitch": 0.05006820025434422,
-          "rotation": 0,
-          "target": "8-2buffer3"
-        },
-        {
-          "yaw": -1.2049835045731143,
-          "pitch": 0.06906121625712913,
-          "rotation": 0,
-          "target": "7-2buffer2"
-        },
-        {
-          "yaw": 2.6969146508935626,
-          "pitch": -0.0301146190374304,
-          "rotation": 0,
-          "target": "9-2buffer4"
-        },
-        {
-          "yaw": 1.4777545702528068,
-          "pitch": -0.032131354132966194,
-          "rotation": 0,
-          "target": "10-2buffer5"
-        },
-        {
-          "yaw": 0.25206945456244156,
-          "pitch": 0.020245954623462126,
-          "rotation": 0,
-          "target": "6-2buffer1"
+          "target": "6-2route1"
         }
       ],
       "infoHotspots": [
@@ -128,241 +122,7 @@ var APP_DATA = {
       ]
     },
     {
-      "id": "1-2route1",
-      "name": "2route1",
-      "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        },
-        {
-          "tileSize": 512,
-          "size": 4096
-        }
-      ],
-      "faceSize": 2976,
-      "initialViewParameters": {
-        "yaw": -1.0230314538612966,
-        "pitch": -0.04268270467908941,
-        "fov": 1.38217411905719
-      },
-      "linkHotspots": [
-        {
-          "yaw": -1.2678253607852064,
-          "pitch": 0.08075058375369437,
-          "rotation": 0,
-          "target": "2-2route2"
-        },
-        {
-          "yaw": 1.6823752704506179,
-          "pitch": 0.09716144728200504,
-          "rotation": 3.141592653589793,
-          "target": "1-2main"
-        }
-      ],
-      "infoHotspots": []
-    },
-    {
-      "id": "2-2route2",
-      "name": "2route2",
-      "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        },
-        {
-          "tileSize": 512,
-          "size": 4096
-        }
-      ],
-      "faceSize": 2976,
-      "initialViewParameters": {
-        "yaw": -2.5065346346544572,
-        "pitch": -0.04505473778225344,
-        "fov": 1.38217411905719
-      },
-      "linkHotspots": [
-        {
-          "yaw": -2.4999004116518684,
-          "pitch": 0.06771280135824043,
-          "rotation": 0,
-          "target": "3-2route3"
-        },
-        {
-          "yaw": 0.18545023559671492,
-          "pitch": 0.05526594929913209,
-          "rotation": 3.141592653589793,
-          "target": "1-2route1"
-        }
-      ],
-      "infoHotspots": []
-    },
-    {
-      "id": "3-2route3",
-      "name": "2route3",
-      "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        },
-        {
-          "tileSize": 512,
-          "size": 4096
-        }
-      ],
-      "faceSize": 2976,
-      "initialViewParameters": {
-        "yaw": -1.5828469091881363,
-        "pitch": 0.12617886318243876,
-        "fov": 1.38217411905719
-      },
-      "linkHotspots": [
-        {
-          "yaw": -1.3536922940216947,
-          "pitch": 0.020731571605931975,
-          "rotation": 0,
-          "target": "4-2route4"
-        },
-        {
-          "yaw": 1.7523818487893008,
-          "pitch": 0.07730752131145557,
-          "rotation": 3.141592653589793,
-          "target": "3-2route3"
-        }
-      ],
-      "infoHotspots": []
-    },
-    {
-      "id": "4-2route4",
-      "name": "2route4",
-      "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        },
-        {
-          "tileSize": 512,
-          "size": 4096
-        }
-      ],
-      "faceSize": 2976,
-      "initialViewParameters": {
-        "yaw": 0.7647275704809111,
-        "pitch": -0.0934983911892644,
-        "fov": 1.38217411905719
-      },
-      "linkHotspots": [
-        {
-          "yaw": 0.7647275704809111,
-          "pitch": -0.0934983911892644,
-          "rotation": 0,
-          "target": "5-2route5"
-        },
-        {
-          "yaw": -2.3463184254233127,
-          "pitch": -0.005212263574399856,
-          "rotation": 3.141592653589793,
-          "target": "4-2route4"
-        }
-      ],
-      "infoHotspots": []
-    },
-    {
-      "id": "5-2route5",
-      "name": "2route5",
-      "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        },
-        {
-          "tileSize": 512,
-          "size": 4096
-        }
-      ],
-      "faceSize": 2976,
-      "initialViewParameters": {
-        "yaw": 1.4477282246071654,
-        "pitch": 0.03934605051778206,
-        "fov": 1.38217411905719
-      },
-      "linkHotspots": [
-        {
-          "yaw": -1.5474359577610155,
-          "pitch": 0.13480540727103296,
-          "rotation": 3.141592653589793,
-          "target": "4-2route4"
-        }
-      ],
-      "infoHotspots": []
-    },
-    {
-      "id": "6-2buffer1",
+      "id": "0-2buffer1",
       "name": "2buffer1",
       "levels": [
         {
@@ -389,14 +149,14 @@ var APP_DATA = {
       ],
       "faceSize": 2976,
       "initialViewParameters": {
-        "yaw": -0.6337018493703788,
-        "pitch": -0.06971538142703793,
+        "yaw": -0.6497962757320881,
+        "pitch": -0.029684276382438313,
         "fov": 1.38217411905719
       },
       "linkHotspots": [
         {
-          "yaw": -0.6663167360145863,
-          "pitch": 0.2536814554944087,
+          "yaw": -0.6740203492089645,
+          "pitch": 0.25332808661178774,
           "rotation": 3.141592653589793,
           "target": "1-2main"
         }
@@ -404,7 +164,7 @@ var APP_DATA = {
       "infoHotspots": []
     },
     {
-      "id": "7-2buffer2",
+      "id": "1-2buffer2",
       "name": "2buffer2",
       "levels": [
         {
@@ -431,22 +191,22 @@ var APP_DATA = {
       ],
       "faceSize": 2976,
       "initialViewParameters": {
-        "yaw": 0.8162770655481157,
-        "pitch": 0.05009221639536676,
+        "yaw": 0.7800236098281808,
+        "pitch": 0.07792122550389458,
         "fov": 1.38217411905719
       },
       "linkHotspots": [
         {
-          "yaw": 0.6946881345775466,
-          "pitch": 0.3848683954620782,
+          "yaw": 0.6909621317270087,
+          "pitch": 0.41191725473987795,
           "rotation": 3.141592653589793,
-          "target": "7-2buffer2"
+          "target": "1-2main"
         }
       ],
       "infoHotspots": []
     },
     {
-      "id": "8-2buffer3",
+      "id": "2-2buffer3",
       "name": "2buffer3",
       "levels": [
         {
@@ -473,14 +233,14 @@ var APP_DATA = {
       ],
       "faceSize": 2976,
       "initialViewParameters": {
-        "yaw": -2.737015399298828,
-        "pitch": 0.05020468176563142,
+        "yaw": -2.636272036494221,
+        "pitch": -0.10193117582813827,
         "fov": 1.38217411905719
       },
       "linkHotspots": [
         {
-          "yaw": -2.74600400501404,
-          "pitch": 0.2602270176218333,
+          "yaw": -2.73084477530897,
+          "pitch": 0.23054253373718403,
           "rotation": 3.141592653589793,
           "target": "1-2main"
         }
@@ -488,7 +248,7 @@ var APP_DATA = {
       "infoHotspots": []
     },
     {
-      "id": "9-2buffer4",
+      "id": "3-2buffer4",
       "name": "2buffer4",
       "levels": [
         {
@@ -515,14 +275,14 @@ var APP_DATA = {
       ],
       "faceSize": 2976,
       "initialViewParameters": {
-        "yaw": 1.7031946100976665,
-        "pitch": 0.06773093990092605,
+        "yaw": -2.3514165741688533,
+        "pitch": -0.06191558161657795,
         "fov": 1.38217411905719
       },
       "linkHotspots": [
         {
-          "yaw": 1.5687582620337555,
-          "pitch": 0.24995920653761594,
+          "yaw": -2.4360917773994597,
+          "pitch": 0.28244070914603014,
           "rotation": 3.141592653589793,
           "target": "1-2main"
         }
@@ -530,49 +290,7 @@ var APP_DATA = {
       "infoHotspots": []
     },
     {
-      "id": "10-2buffer5",
-      "name": "2buffer5",
-      "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        },
-        {
-          "tileSize": 512,
-          "size": 4096
-        }
-      ],
-      "faceSize": 2976,
-      "initialViewParameters": {
-        "yaw": -2.432216393304813,
-        "pitch": 0.03396167446697618,
-        "fov": 1.38217411905719
-      },
-      "linkHotspots": [
-        {
-          "yaw": -2.438938104474163,
-          "pitch": 0.2714318577556032,
-          "rotation": 3.141592653589793,
-          "target": "1-2main"
-        }
-      ],
-      "infoHotspots": []
-    },
-    {
-      "id": "11-2main_top",
+      "id": "5-2main_top",
       "name": "2main_top",
       "levels": [
         {
@@ -599,64 +317,23 @@ var APP_DATA = {
       ],
       "faceSize": 2976,
       "initialViewParameters": {
-        "pitch": 0,
-        "yaw": 0,
-        "fov": 1.5707963267948966
-      },
-      "linkHotspots": [],
-      "infoHotspots": []
-    },
-    {
-      "id": "2route1",
-      "name": "Plot 2 – Route 1",
-      "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        },
-        {
-          "tileSize": 512,
-          "size": 4096
-        }
-      ],
-      "faceSize": 4096,
-      "initialViewParameters": {
-        "yaw": 0,
-        "pitch": 0,
-        "fov": 1.3
+        "yaw": 0.030873588210788228,
+        "pitch": 0.5602686869283495,
+        "fov": 1.38217411905719
       },
       "linkHotspots": [
         {
-          "yaw": 0.0,
-          "pitch": 0.1,
-          "rotation": 0,
-          "target": "2route2"
-        },
-        {
-          "yaw": 2.5,
-          "pitch": 0.1,
-          "rotation": 0,
+          "yaw": -0.19231760050680613,
+          "pitch": 1.0249596477690197,
+          "rotation": 3.141592653589793,
           "target": "1-2main"
         }
       ],
       "infoHotspots": []
     },
     {
-      "id": "2route2",
-      "name": "Plot 2 – Route 2",
+      "id": "6-2route1",
+      "name": "2route1",
       "levels": [
         {
           "tileSize": 256,
@@ -680,31 +357,31 @@ var APP_DATA = {
           "size": 4096
         }
       ],
-      "faceSize": 4096,
+      "faceSize": 2976,
       "initialViewParameters": {
-        "yaw": 0,
-        "pitch": 0,
-        "fov": 1.3
+        "yaw": -0.9733932174028954,
+        "pitch": -0.016843485972463768,
+        "fov": 1.38217411905719
       },
       "linkHotspots": [
         {
-          "yaw": 0.0,
-          "pitch": 0.1,
-          "rotation": 0,
-          "target": "2route3"
+          "yaw": 2.031933832932066,
+          "pitch": 0.1945618621452283,
+          "rotation": 3.141592653589793,
+          "target": "1-2main"
         },
         {
-          "yaw": 3.1,
-          "pitch": 0.1,
+          "yaw": -0.9822515166388666,
+          "pitch": 0.1546540530971079,
           "rotation": 0,
-          "target": "2route1"
+          "target": "7-2route2"
         }
       ],
       "infoHotspots": []
     },
     {
-      "id": "2route3",
-      "name": "Plot 2 – Route 3",
+      "id": "7-2route2",
+      "name": "2route2",
       "levels": [
         {
           "tileSize": 256,
@@ -728,31 +405,31 @@ var APP_DATA = {
           "size": 4096
         }
       ],
-      "faceSize": 4096,
+      "faceSize": 2976,
       "initialViewParameters": {
-        "yaw": 0,
-        "pitch": 0,
-        "fov": 1.3
+        "yaw": -2.615661692241112,
+        "pitch": -0.09082714817603232,
+        "fov": 1.38217411905719
       },
       "linkHotspots": [
         {
-          "yaw": 0.0,
-          "pitch": 0.1,
-          "rotation": 0,
-          "target": "2route4"
+          "yaw": 0.3572406932742638,
+          "pitch": 0.036371250191125526,
+          "rotation": 3.141592653589793,
+          "target": "6-2route1"
         },
         {
-          "yaw": 3.1,
-          "pitch": 0.1,
+          "yaw": -2.62003545330834,
+          "pitch": 0.12132625849279854,
           "rotation": 0,
-          "target": "2route2"
+          "target": "8-2route3"
         }
       ],
       "infoHotspots": []
     },
     {
-      "id": "2route4",
-      "name": "Plot 2 – Route 4",
+      "id": "8-2route3",
+      "name": "2route3",
       "levels": [
         {
           "tileSize": 256,
@@ -776,31 +453,31 @@ var APP_DATA = {
           "size": 4096
         }
       ],
-      "faceSize": 4096,
+      "faceSize": 2976,
       "initialViewParameters": {
-        "yaw": 0,
-        "pitch": 0,
-        "fov": 1.3
+        "yaw": -1.5817336488622988,
+        "pitch": -0.07860647542311128,
+        "fov": 1.38217411905719
       },
       "linkHotspots": [
         {
-          "yaw": 0.0,
-          "pitch": 0.1,
-          "rotation": 0,
-          "target": "2route5"
+          "yaw": 1.324671465688052,
+          "pitch": 0.04676046106220966,
+          "rotation": 3.141592653589793,
+          "target": "7-2route2"
         },
         {
-          "yaw": 3.1,
-          "pitch": 0.1,
+          "yaw": -1.6015254174014046,
+          "pitch": 0.08208165640092346,
           "rotation": 0,
-          "target": "2route3"
+          "target": "9-2route4"
         }
       ],
       "infoHotspots": []
     },
     {
-      "id": "2route5",
-      "name": "Plot 2 – Route 5",
+      "id": "9-2route4",
+      "name": "2route4",
       "levels": [
         {
           "tileSize": 256,
@@ -824,18 +501,66 @@ var APP_DATA = {
           "size": 4096
         }
       ],
-      "faceSize": 4096,
+      "faceSize": 2976,
       "initialViewParameters": {
-        "yaw": 0,
-        "pitch": 0,
-        "fov": 1.3
+        "yaw": 0.8122493826589139,
+        "pitch": -0.1836714601163152,
+        "fov": 1.38217411905719
       },
       "linkHotspots": [
         {
-          "yaw": 3.1,
-          "pitch": 0.1,
+          "yaw": 0.6707427567678934,
+          "pitch": -0.02059634204396943,
           "rotation": 0,
-          "target": "2route4"
+          "target": "10-2route5"
+        },
+        {
+          "yaw": -2.5223246320215775,
+          "pitch": 0.028892119161971763,
+          "rotation": 3.141592653589793,
+          "target": "8-2route3"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "10-2route5",
+      "name": "2route5",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        },
+        {
+          "tileSize": 512,
+          "size": 4096
+        }
+      ],
+      "faceSize": 2976,
+      "initialViewParameters": {
+        "yaw": 1.578241437590128,
+        "pitch": -0.025973741834635078,
+        "fov": 1.38217411905719
+      },
+      "linkHotspots": [
+        {
+          "yaw": -1.699545202318621,
+          "pitch": 0.20785454878113008,
+          "rotation": 3.141592653589793,
+          "target": "9-2route4"
         }
       ],
       "infoHotspots": []
