@@ -786,11 +786,42 @@ var APP_DATA = {
       ],
       "faceSize": 2976,
       "initialViewParameters": {
-        "yaw": 1.4544368738401277,
-        "pitch": 0.5371257232275077,
+        "yaw": 1.9018818163574904,
+        "pitch": 0.4915638649106544,
         "fov": 1.38217411905719
       },
-      "linkHotspots": [],
+      "linkHotspots": [
+        {
+          "yaw": -1.9437085716714382,
+          "pitch": 0.14382471999348567,
+          "rotation": 3.141592653589793,
+          "target": "5-3route1"
+        },
+        {
+          "yaw": -0.20321147672104622,
+          "pitch": 0.15053423126289545,
+          "rotation": 0,
+          "target": "0-3buffer1"
+        },
+        {
+          "yaw": -1.4277372093819292,
+          "pitch": 0.1467032968691946,
+          "rotation": 0,
+          "target": "1-3buffer2"
+        },
+        {
+          "yaw": 2.987716219545888,
+          "pitch": 0.08177896791838535,
+          "rotation": 0,
+          "target": "2-3buffer3"
+        },
+        {
+          "yaw": 1.3652698868024356,
+          "pitch": 0.07884665512910871,
+          "rotation": 0,
+          "target": "3-3buffer4"
+        }
+      ],
       "infoHotspots": [
         {
           "yaw": 2.0173030386325452,
@@ -799,6 +830,456 @@ var APP_DATA = {
           "text": "Plot 03-"
         }
       ]
+    },
+    {
+      "id": "0-3buffer1",
+      "name": "3buffer1",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        },
+        {
+          "tileSize": 512,
+          "size": 4096
+        }
+      ],
+      "faceSize": 2976,
+      "initialViewParameters": {
+        "yaw": 0.9491906008922992,
+        "pitch": -0.14285558009047428,
+        "fov": 1.38217411905719
+      },
+      "linkHotspots": [
+        {
+          "yaw": 0.8096212722822891,
+          "pitch": 0.21412057198933532,
+          "rotation": 6.283185307179586,
+          "target": "2-3main"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "1-3buffer2",
+      "name": "3buffer2",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        },
+        {
+          "tileSize": 512,
+          "size": 4096
+        }
+      ],
+      "faceSize": 2976,
+      "initialViewParameters": {
+        "yaw": 2.090867758792273,
+        "pitch": -0.12845152409636817,
+        "fov": 1.38217411905719
+      },
+      "linkHotspots": [
+        {
+          "yaw": 2.013210273054842,
+          "pitch": 0.14188199270517998,
+          "rotation": 6.283185307179586,
+          "target": "2-3main"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "2-3buffer3",
+      "name": "3buffer3",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        },
+        {
+          "tileSize": 512,
+          "size": 4096
+        }
+      ],
+      "faceSize": 2976,
+      "initialViewParameters": {
+        "yaw": -1.4432455448177244,
+        "pitch": 0.05568116909460308,
+        "fov": 1.38217411905719
+      },
+      "linkHotspots": [
+        {
+          "yaw": -1.5237497227358343,
+          "pitch": 0.19623117283382285,
+          "rotation": 0,
+          "target": "2-3main"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "3-3buffer4",
+      "name": "3buffer4",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        },
+        {
+          "tileSize": 512,
+          "size": 4096
+        }
+      ],
+      "faceSize": 2976,
+      "initialViewParameters": {
+        "yaw": -0.85741799825316,
+        "pitch": 0.09485225936860964,
+        "fov": 1.38217411905719
+      },
+      "linkHotspots": [
+        {
+          "yaw": -0.9203644887999154,
+          "pitch": 0.18968108775273862,
+          "rotation": 0,
+          "target": "3-3buffer4"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "5-3route1",
+      "name": "3route1",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        },
+        {
+          "tileSize": 512,
+          "size": 4096
+        }
+      ],
+      "faceSize": 2976,
+      "initialViewParameters": {
+        "yaw": -2.333915489035908,
+        "pitch": 0.1908071034774892,
+        "fov": 1.38217411905719
+      },
+      "linkHotspots": [
+        {
+          "yaw": -2.333915489035908,
+          "pitch": 0.1908071034774892,
+          "rotation": 0,
+          "target": "6-3route2"
+        },
+        {
+          "yaw": 1.5507281196869398,
+          "pitch": 0.13487655745763405,
+          "rotation": 3.141592653589793,
+          "target": "2-3main"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "6-3route2",
+      "name": "3route2",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        },
+        {
+          "tileSize": 512,
+          "size": 4096
+        }
+      ],
+      "faceSize": 2976,
+      "initialViewParameters": {
+        "yaw": 0.08204056475111088,
+        "pitch": -0.05380275094316289,
+        "fov": 1.38217411905719
+      },
+      "linkHotspots": [
+        {
+          "yaw": -0.14305379322264145,
+          "pitch": 0.12734783372369662,
+          "rotation": 0,
+          "target": "7-3route3"
+        },
+        {
+          "yaw": 3.0422963328613015,
+          "pitch": 0.15128191257274004,
+          "rotation": 3.141592653589793,
+          "target": "5-3route1"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "7-3route3",
+      "name": "3route3",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        },
+        {
+          "tileSize": 512,
+          "size": 4096
+        }
+      ],
+      "faceSize": 2976,
+      "initialViewParameters": {
+        "yaw": -2.014665907677026,
+        "pitch": -0.03393765944882965,
+        "fov": 1.38217411905719
+      },
+      "linkHotspots": [
+        {
+          "yaw": -2.0257286533368113,
+          "pitch": 0.08977416941242566,
+          "rotation": 0,
+          "target": "8-3route4"
+        },
+        {
+          "yaw": 0.9089321350533393,
+          "pitch": 0.13526095608470357,
+          "rotation": 3.141592653589793,
+          "target": "6-3route2"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "8-3route4",
+      "name": "3route4",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        },
+        {
+          "tileSize": 512,
+          "size": 4096
+        }
+      ],
+      "faceSize": 2976,
+      "initialViewParameters": {
+        "yaw": 2.0394947058434454,
+        "pitch": -0.11751432742953938,
+        "fov": 1.38217411905719
+      },
+      "linkHotspots": [
+        {
+          "yaw": 2.0939260745374533,
+          "pitch": 0.0987351675039001,
+          "rotation": 0,
+          "target": "9-3route5"
+        },
+        {
+          "yaw": -1.3446393590120795,
+          "pitch": 0.05387103182691888,
+          "rotation": 3.141592653589793,
+          "target": "7-3route3"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "9-3route5",
+      "name": "3route5",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        },
+        {
+          "tileSize": 512,
+          "size": 4096
+        }
+      ],
+      "faceSize": 2976,
+      "initialViewParameters": {
+        "yaw": 0.024519434987706035,
+        "pitch": -0.03616634913947614,
+        "fov": 1.38217411905719
+      },
+      "linkHotspots": [
+        {
+          "yaw": -0.05026385101137798,
+          "pitch": 0.1902742651434064,
+          "rotation": 0,
+          "target": "10-3route6"
+        },
+        {
+          "yaw": 2.9975246184960884,
+          "pitch": 0.1747446025417858,
+          "rotation": 3.141592653589793,
+          "target": "8-3route4"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "10-3route6",
+      "name": "3route6",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        },
+        {
+          "tileSize": 512,
+          "size": 4096
+        }
+      ],
+      "faceSize": 2976,
+      "initialViewParameters": {
+        "yaw": 3.1018042150390706,
+        "pitch": -0.06493435458657082,
+        "fov": 1.38217411905719
+      },
+      "linkHotspots": [
+        {
+          "yaw": 2.4293427010772906,
+          "pitch": 0.021954204926618814,
+          "rotation": 4.71238898038469,
+          "target": "9-3route5"
+        }
+      ],
+      "infoHotspots": []
     },
     {
       "id": "3-4main",
