@@ -1351,11 +1351,48 @@ var APP_DATA = {
       ],
       "faceSize": 2976,
       "initialViewParameters": {
-        "yaw": -2.487744637490527,
-        "pitch": 0.463729112068739,
+        "yaw": -2.42869278219826,
+        "pitch": 0.40258652160075137,
         "fov": 1.38217411905719
       },
-      "linkHotspots": [],
+      "linkHotspots": [
+        {
+          "yaw": -2.342044266214293,
+          "pitch": 1.0956950579887277,
+          "rotation": 0,
+          "target": "1-5main_top"
+        },
+        {
+          "yaw": -0.20664688508258777,
+          "pitch": 0.23021382964391535,
+          "rotation": 9.42477796076938,
+          "target": "6-5route1"
+        },
+        {
+          "yaw": 0.5271201050544274,
+          "pitch": 0.18616576138539287,
+          "rotation": 0,
+          "target": "2-5buffer1"
+        },
+        {
+          "yaw": 2.3587172320108643,
+          "pitch": 0.05167937492704766,
+          "rotation": 0,
+          "target": "4-5buffer3"
+        },
+        {
+          "yaw": -1.6656548534734803,
+          "pitch": 0.07841598077144774,
+          "rotation": 0,
+          "target": "5-5buffer4"
+        },
+        {
+          "yaw": -2.917085048553062,
+          "pitch": 0.06714707200284842,
+          "rotation": 0,
+          "target": "3-5buffer2"
+        }
+      ],
       "infoHotspots": [
         {
           "yaw": -2.200543979152121,
@@ -1364,6 +1401,402 @@ var APP_DATA = {
           "text": "Plot 05-"
         }
       ]
+    },
+    {
+      "id": "1-5main_top",
+      "name": "5main_top",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        },
+        {
+          "tileSize": 512,
+          "size": 4096
+        }
+      ],
+      "faceSize": 2976,
+      "initialViewParameters": {
+        "yaw": 0.07183802922777716,
+        "pitch": 0.6002805809647356,
+        "fov": 1.38217411905719
+      },
+      "linkHotspots": [
+        {
+          "yaw": -0.07552678325341589,
+          "pitch": 1.2025258314076481,
+          "rotation": 0,
+          "target": "4-5main"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "2-5buffer1",
+      "name": "5buffer1",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        },
+        {
+          "tileSize": 512,
+          "size": 4096
+        }
+      ],
+      "faceSize": 2976,
+      "initialViewParameters": {
+        "yaw": 1.529247857789457,
+        "pitch": -0.05380275094316467,
+        "fov": 1.38217411905719
+      },
+      "linkHotspots": [
+        {
+          "yaw": 1.4204867331599882,
+          "pitch": 0.2721721315812502,
+          "rotation": 0,
+          "target": "4-5main"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "3-5buffer2",
+      "name": "5buffer2",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        },
+        {
+          "tileSize": 512,
+          "size": 4096
+        }
+      ],
+      "faceSize": 2976,
+      "initialViewParameters": {
+        "yaw": -0.9599397910568275,
+        "pitch": -0.12985267475379736,
+        "fov": 1.38217411905719
+      },
+      "linkHotspots": [
+        {
+          "yaw": -1.0303302532320782,
+          "pitch": 0.22277484009132564,
+          "rotation": 0,
+          "target": "4-5main"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "4-5buffer3",
+      "name": "5buffer3",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        },
+        {
+          "tileSize": 512,
+          "size": 4096
+        }
+      ],
+      "faceSize": 2976,
+      "initialViewParameters": {
+        "yaw": 2.412360708349202,
+        "pitch": -0.1337251684456735,
+        "fov": 1.38217411905719
+      },
+      "linkHotspots": [
+        {
+          "yaw": 2.344118149184742,
+          "pitch": 0.21503544380175832,
+          "rotation": 0,
+          "target": "4-5main"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "5-5buffer4",
+      "name": "5buffer4",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        },
+        {
+          "tileSize": 512,
+          "size": 4096
+        }
+      ],
+      "faceSize": 2976,
+      "initialViewParameters": {
+        "yaw": -0.8446015888618792,
+        "pitch": 0.009089931117328476,
+        "fov": 1.38217411905719
+      },
+      "linkHotspots": [
+        {
+          "yaw": -0.9796686512507904,
+          "pitch": 0.3436106332882005,
+          "rotation": 0,
+          "target": "4-5main"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "6-5route1",
+      "name": "5route1",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        },
+        {
+          "tileSize": 512,
+          "size": 4096
+        }
+      ],
+      "faceSize": 2976,
+      "initialViewParameters": {
+        "yaw": -0.23906588774163318,
+        "pitch": 0.12254162404263802,
+        "fov": 1.38217411905719
+      },
+      "linkHotspots": [
+        {
+          "yaw": 2.123859149197708,
+          "pitch": 0.08790038489528662,
+          "rotation": 7.0685834705770345,
+          "target": "4-5main"
+        },
+        {
+          "yaw": -0.06279600012089759,
+          "pitch": 0.28121752835054536,
+          "rotation": 0,
+          "target": "7-5route2"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "7-5route2",
+      "name": "5route2",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        },
+        {
+          "tileSize": 512,
+          "size": 4096
+        }
+      ],
+      "faceSize": 2976,
+      "initialViewParameters": {
+        "yaw": 0.3678663431878615,
+        "pitch": -0.04267114729975319,
+        "fov": 1.38217411905719
+      },
+      "linkHotspots": [
+        {
+          "yaw": -2.4609938195902075,
+          "pitch": 0.05197429651100194,
+          "rotation": 0.7853981633974483,
+          "target": "6-5route1"
+        },
+        {
+          "yaw": 0.40764319162876106,
+          "pitch": 0.23302307271811884,
+          "rotation": 0,
+          "target": "8-5route3"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "8-5route3",
+      "name": "5route3",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        },
+        {
+          "tileSize": 512,
+          "size": 4096
+        }
+      ],
+      "faceSize": 2976,
+      "initialViewParameters": {
+        "yaw": 0.28193780224523834,
+        "pitch": -0.19665833103364072,
+        "fov": 1.38217411905719
+      },
+      "linkHotspots": [
+        {
+          "yaw": 0.2586045581267449,
+          "pitch": 0.11492620661991992,
+          "rotation": 0,
+          "target": "9-5route4"
+        },
+        {
+          "yaw": -2.5695372138663934,
+          "pitch": 0.12604266503150185,
+          "rotation": 0,
+          "target": "7-5route2"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "9-5route4",
+      "name": "5route4",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        },
+        {
+          "tileSize": 512,
+          "size": 4096
+        }
+      ],
+      "faceSize": 2976,
+      "initialViewParameters": {
+        "yaw": 1.0353274118230669,
+        "pitch": 0.33932980363318244,
+        "fov": 1.38217411905719
+      },
+      "linkHotspots": [
+        {
+          "yaw": 0.34443773766360053,
+          "pitch": 0.41876844895874044,
+          "rotation": 5.497787143782138,
+          "target": "8-5route3"
+        }
+      ],
+      "infoHotspots": []
     },
     {
       "id": "5-6main",
