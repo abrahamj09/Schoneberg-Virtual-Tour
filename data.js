@@ -994,7 +994,7 @@ var APP_DATA = {
           "yaw": -0.9203644887999154,
           "pitch": 0.18968108775273862,
           "rotation": 0,
-          "target": "3-3buffer4"
+          "target": "2-3main"
         }
       ],
       "infoHotspots": []
