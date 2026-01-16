@@ -63,7 +63,7 @@ var APP_DATA = {
           "yaw": -1.0864382223976037,
           "pitch": 0.3877784949533325,
           "title": "Plot 01",
-          "text": "Plot 1-"
+          "text": "<button onclick=\"openImage('images/hnee.jpg')\">View Image</button>"
         }
       ]
     },
