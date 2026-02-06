@@ -3554,7 +3554,7 @@ var APP_DATA = {
         }
       ],
       "infoHotspots": []
-    }
+    },
     {
       "id": "9-10main",
       "name": "10main",
