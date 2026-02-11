@@ -2660,6 +2660,41 @@ var APP_DATA = {
       "infoHotspots": []
     },
     {
+      "id": "5-7route1",
+      "name": "7route1",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        },
+        {
+          "tileSize": 512,
+          "size": 4096
+        }
+      ],
+      "faceSize": 2976,
+      "initialViewParameters": {
+        "yaw": -2.6821872874294534,
+        "pitch": -0.202943630381073,
+        "fov": 1.38217411905719
+      },
+      "linkHotspots": [],
+      "infoHotspots": []
+    },
+    {
       "id": "7-8main",
       "name": "8main",
       "levels": [
