@@ -941,10 +941,10 @@ html, body {
   position: fixed;
   bottom: 15px;
   right: 15px;
-  width: 60px; /* adjust size */ 
+  width: 80px; /* adjust size */ 
   height: auto;
   z-index: 9999;
-  opacity: 0.5;
+  opacity: 0.8;
 } 
 
 @media (max-width: 768px) {
