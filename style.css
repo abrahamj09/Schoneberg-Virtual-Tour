@@ -936,3 +936,22 @@ html, body {
   color: #ccc;
   font-size: 14px;
 }
+
+#company-logo {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  width: 120px; /* adjust size */
+  height: auto;
+  z-index: 9999;
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  #company-logo {
+    width: 80px;
+    bottom: 10px;
+    right: 10px;
+  }
+}
+
