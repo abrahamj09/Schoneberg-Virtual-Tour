@@ -34,6 +34,11 @@ a, a:hover, a:active, a:visited {
 }
 
 #pano {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+#pano {
   position: absolute;
   top: 0;
   left: 0;
