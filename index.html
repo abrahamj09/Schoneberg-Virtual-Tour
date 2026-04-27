@@ -18,6 +18,18 @@
 
 <body class="multiple-scenes view-control-buttons">
 
+  <!-- INTRO SCREEN -->
+  <div id="intro-screen">
+  <div id="intro-content">
+    <h1>Welcome to the Forest Virtual Tour</h1>
+    <p>
+      This virtual experience showcases 32 ecological plots with immersive 360° views,
+      buffer zones, and access routes.
+    </p>
+    <button id="start-btn">Start Tour</button>
+  </div>
+</div>
+
   <!-- FULLSCREEN MAP VIEW -->
   <div id="map-view">
     <div id="map"></div>
@@ -118,6 +130,15 @@ function openImage(src) {
 }
 </script>
 
+<!-- INTRO BUTTON SCRIPT -->
+<script>
+document.getElementById("start-btn").onclick = function () {
+  const intro = document.getElementById("intro-screen");
+  intro.style.opacity = "0";
+  setTimeout(() => intro.style.display = "none", 500);
+};
+</script>
+  
   <a href="https://econics.institute/en/" target="_blank">
   <img src="img/logo.png" id="company-logo" />
 </a>
