@@ -135,7 +135,6 @@ function openImage(src) {
 
 <!-- INTRO BUTTON SCRIPT -->
 <script>
-document.getElementById("pano").style.opacity = "0";
 document.getElementById("start-btn").onclick = function () {
   const intro = document.getElementById("intro-screen");
   intro.style.opacity = "0";
@@ -143,36 +142,18 @@ document.getElementById("start-btn").onclick = function () {
 };
 </script>
   
-<script>
+  <script>
   const intro = document.getElementById("intro-screen");
   const btn = document.getElementById("enter-btn");
-  const pano = document.getElementById("pano");
 
   btn.addEventListener("click", () => {
-    // 1. fade intro out
-    intro.style.transition = "opacity 0.6s ease";
-    intro.style.opacity = "0";
-    intro.style.pointerEvents = "none";
+  intro.style.opacity = "0";
+  intro.style.pointerEvents = "none";
 
-    // 2. fade panorama in slightly AFTER intro starts fading
-    setTimeout(() => {
-      pano.style.opacity = "1";
-    }, 200);
-
-    // 3. remove intro completely after fade
-    setTimeout(() => {
-      intro.style.display = "none";
-    }, 700);
-
-    // 4. optional: subtle “push-in” effect for immersion
-    if (window.viewer && window.view) {
-      setTimeout(() => {
-        const current = viewer.view().fov();
-
-        viewer.view().setFov(current * 0.85); // slight zoom-in feel
-      }, 250);
-    }
-  });
+  setTimeout(() => {
+    intro.style.display = "none";
+  }, 600);
+});
 </script>
   
   <a href="https://econics.institute/en/" target="_blank">
