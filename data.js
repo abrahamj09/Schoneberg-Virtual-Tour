@@ -58,6 +58,14 @@ var APP_DATA = {
           "target": "1-1buffer2"
         }
       ],
+      "imageHotspots": [
+    {
+      "yaw": -1.5435989871166278,
+      "pitch": 0.19813065011817166,
+      "preview": "img/dataimg/1.jpg",
+      "full": "img/dataimg/2.jpg"
+    }
+      ],
       "infoHotspots": [
         {
           "yaw": -1.0864382223976037,
@@ -267,6 +275,14 @@ var APP_DATA = {
         "pitch": 0.612212862418394,
         "fov": 1.38217411905719
       },
+      "imageHotspots": [
+    {
+      "yaw": -1.5435989871166278,
+      "pitch": 0.19813065011817166,
+      "preview": "img/dataimg/1.jpg",
+      "full": "img/dataimg/2.jpg"
+    }
+      ],
       "linkHotspots": [
         {
           "yaw": -0.2749526072015165,
@@ -790,6 +806,14 @@ var APP_DATA = {
         "pitch": 0.4915638649106544,
         "fov": 1.38217411905719
       },
+      "imageHotspots": [
+    {
+      "yaw": -1.5435989871166278,
+      "pitch": 0.19813065011817166,
+      "preview": "img/dataimg/1.jpg",
+      "full": "img/dataimg/2.jpg"
+    }
+      ],
       "linkHotspots": [
         {
           "yaw": -1.9437085716714382,
@@ -1313,6 +1337,14 @@ var APP_DATA = {
         "pitch": 0.28200062563314887,
         "fov": 1.38217411905719
       },
+      "imageHotspots": [
+    {
+      "yaw": -1.5435989871166278,
+      "pitch": 0.19813065011817166,
+      "preview": "img/dataimg/1.jpg",
+      "full": "img/dataimg/2.jpg"
+    }
+      ],
       "linkHotspots": [        
         {
           "yaw": 2.180988729021548,
@@ -1548,6 +1580,14 @@ var APP_DATA = {
         "pitch": 0.40258652160075137,
         "fov": 1.38217411905719
       },
+      "imageHotspots": [
+    {
+      "yaw": -1.5435989871166278,
+      "pitch": 0.19813065011817166,
+      "preview": "img/dataimg/1.jpg",
+      "full": "img/dataimg/2.jpg"
+    }
+      ],
       "linkHotspots": [
         {
           "yaw": -2.342044266214293,
@@ -2054,6 +2094,14 @@ var APP_DATA = {
           "rotation": 0,
           "target": "8-6buffer4"
         }
+      ],
+      "imageHotspots": [
+    {
+      "yaw": -1.5435989871166278,
+      "pitch": 0.19813065011817166,
+      "preview": "img/dataimg/1.jpg",
+      "full": "img/dataimg/2.jpg"
+    }
       ],
       "infoHotspots": [
         {
