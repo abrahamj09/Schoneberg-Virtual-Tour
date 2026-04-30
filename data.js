@@ -10570,8 +10570,8 @@ var APP_DATA = {
     {
       "yaw": 0.5,
       "pitch": 0.1,
-      "preview": "img/1.jpg",
-      "full": "img/2.jpg"
+      "preview": "img/dataimg/1.jpg",
+      "full": "img/dataimg/2.jpg"
     }
       ],
       "infoHotspots": [
