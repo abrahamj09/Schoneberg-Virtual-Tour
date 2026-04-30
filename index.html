@@ -162,17 +162,10 @@ document.getElementById("start-btn").onclick = function () {
 });
 </script>
 
-  <script>
-  setTimeout(() => {
-    const hint = document.getElementById("hint");
-    if (hint) {
-      hint.style.opacity = "0";   // fade out smoothly
-      setTimeout(() => {
-        hint.style.display = "none"; // then remove
-      }, 500);
-    }
-  }, 4000);
-</script>
+<!-- FULLSCREEN INSIDE IMAGE OVERLAY -->
+<div id="image-overlay">
+  <img id="overlay-img" />
+</div>
 
   <div id="image-overlay">
   <img src="" id="overlay-img" />
