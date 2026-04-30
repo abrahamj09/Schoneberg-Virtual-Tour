@@ -1050,3 +1050,13 @@ html, body {
 #intro-screen {
   transition: opacity 0.6s ease;
 }
+
+#hint {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  opacity: 0.6;
+  font-size: 14px;
+}
