@@ -437,8 +437,8 @@ body.single-scene #sceneList, body.single-scene #sceneListToggle {
 
 
 /* =========================
-   IMAGE HOTSPOT BASE (SAFE)
-   - NO transform animation here (Marzipano-safe)
+   IMAGE HOTSPOT — APPLE GLASS UPGRADE (SAFE DROP-IN)
+   Replace ONLY existing image-hotspot section with this
 ========================= */
 
 .image-hotspot {
@@ -446,87 +446,90 @@ body.single-scene #sceneList, body.single-scene #sceneListToggle {
   height: 200px;
   cursor: pointer;
   position: relative;
+  border-radius: 18px;
 }
 
-/* =========================
-   HOTSPOT IMAGE (FLOAT + LOOK)
-========================= */
-
+/* MAIN HOTSPOT CARD */
 .image-hotspot img {
   width: 100%;
   height: 100%;
-  border-radius: 10px;
+  border-radius: 18px;
   display: block;
+
   pointer-events: auto;
 
-  filter: drop-shadow(0 4px 10px rgba(0,0,0,0.25));
+  /* Glass / depth effect */
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.14);
 
-  /* calm floating animation ONLY on inner element */
-  animation: hotspot-float 4s ease-in-out infinite;
+  box-shadow:
+    0 10px 30px rgba(0,0,0,0.35),
+    inset 0 1px 0 rgba(255,255,255,0.08);
 
-  transition: transform 0.25s ease, filter 0.25s ease;
+  /* Calm float */
+  animation: hotspot-float 4.8s ease-in-out infinite;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    filter 0.25s ease;
 }
 
-/* =========================
-   CALM FLOAT
-========================= */
-
+/* FLOAT ANIMATION (SAFE FOR MARZIPANO) */
 @keyframes hotspot-float {
-  0%   { transform: translateY(0); }
-  50%  { transform: translateY(-5px); }
-  100% { transform: translateY(0); }
+  0%   { transform: translateY(0px); }
+  50%  { transform: translateY(-6px); }
+  100% { transform: translateY(0px); }
 }
 
-/* =========================
-   DESKTOP HOVER (PREMIUM)
-========================= */
-
+/* DESKTOP HOVER — APPLE STYLE LIFT */
 .no-touch .image-hotspot:hover img {
-  animation: hotspot-hover 0.9s ease-in-out infinite;
-  transform: scale(1.15);
-  filter: drop-shadow(0 0 14px rgba(0, 200, 255, 0.8));
+  transform: scale(1.08) translateY(-5px);
+
+  box-shadow:
+    0 25px 60px rgba(0,0,0,0.5),
+    0 0 25px rgba(0, 200, 255, 0.35),
+    inset 0 1px 0 rgba(255,255,255,0.18);
+
+  filter: brightness(1.08) saturate(1.15);
 }
 
-@keyframes hotspot-hover {
-  0%   { transform: translateY(0) scale(1.15); }
-  50%  { transform: translateY(-8px) scale(1.2); }
-  100% { transform: translateY(0) scale(1.15); }
-}
-
-/* =========================
-   MOBILE SIZE + TAP FEEDBACK
-========================= */
-
-.mobile .image-hotspot {
-  width: 120px;
-  height: 120px;
-  margin-left: -60px;
-  margin-top: -60px;
-}
-
+/* MOBILE TAP FEEDBACK */
 .touch .image-hotspot:active img {
-  transform: scale(1.2);
-  filter: drop-shadow(0 0 18px rgba(0, 200, 255, 0.9));
+  transform: scale(1.1);
 }
 
-/* =========================
-   SOFT GLOW EFFECT
-========================= */
-
+/* SOFT GLOW RING */
 .image-hotspot::after {
   content: "";
   position: absolute;
-  inset: -10px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(0,200,255,0.25), transparent 70%);
-  animation: glow-pulse 3s ease-in-out infinite;
+  inset: -12px;
+  border-radius: 22px;
+
+  background: radial-gradient(
+    circle,
+    rgba(0, 200, 255, 0.18),
+    transparent 70%
+  );
+
+  animation: glow-pulse 3.5s ease-in-out infinite;
+
   z-index: -1;
 }
 
+/* GLOW PULSE */
 @keyframes glow-pulse {
-  0%   { transform: scale(0.95); opacity: 0.4; }
-  50%  { transform: scale(1.15); opacity: 0.7; }
-  100% { transform: scale(0.95); opacity: 0.4; }
+  0%   { transform: scale(0.95); opacity: 0.35; }
+  50%  { transform: scale(1.12); opacity: 0.75; }
+  100% { transform: scale(0.95); opacity: 0.35; }
+}
+
+/* MOBILE RESPONSIVE SIZE */
+.mobile .image-hotspot {
+  width: 140px;
+  height: 110px;
+  margin-left: -70px;
+  margin-top: -55px;
 }
 
 /* Info hotspot */
