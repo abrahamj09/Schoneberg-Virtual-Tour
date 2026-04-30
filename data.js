@@ -4846,6 +4846,14 @@ var APP_DATA = {
           "target": "4-13buffer4"
         }
       ],
+      "imageHotspots": [
+    {
+      "yaw": -1.5435989871166278,
+      "pitch": 0.19813065011817166,
+      "preview": "img/dataimg/1.jpg",
+      "full": "img/dataimg/2.jpg"
+    }
+      ],
       "infoHotspots": [
         {
           "yaw": -2.5506762627679027,
@@ -5062,6 +5070,14 @@ var APP_DATA = {
           "rotation": 6.283185307179586,
           "target": "1-14route2"
         }
+      ],
+     "imageHotspots": [
+    {
+      "yaw": -1.5435989871166278,
+      "pitch": 0.19813065011817166,
+      "preview": "img/dataimg/1.jpg",
+      "full": "img/dataimg/2.jpg"
+    }
       ],
       "infoHotspots": [
         {
@@ -5562,6 +5578,14 @@ var APP_DATA = {
           "target": "1-15route1"
         }
       ],
+      "imageHotspots": [
+    {
+      "yaw": -1.5435989871166278,
+      "pitch": 0.19813065011817166,
+      "preview": "img/dataimg/1.jpg",
+      "full": "img/dataimg/2.jpg"
+    }
+      ],
       "infoHotspots": [
         {
           "yaw": -1.6301891542288907,
@@ -6000,6 +6024,14 @@ var APP_DATA = {
         "fov": 1.38217411905719
       },
       "linkHotspots": [],
+      "imageHotspots": [
+    {
+      "yaw": -1.5435989871166278,
+      "pitch": 0.19813065011817166,
+      "preview": "img/dataimg/1.jpg",
+      "full": "img/dataimg/2.jpg"
+    }
+      ],
       "infoHotspots": [
         {
           "yaw": 0.2884580739781182,
@@ -6042,6 +6074,14 @@ var APP_DATA = {
         "fov": 1.38217411905719
       },
       "linkHotspots": [],
+      "imageHotspots": [
+    {
+      "yaw": -1.5435989871166278,
+      "pitch": 0.19813065011817166,
+      "preview": "img/dataimg/1.jpg",
+      "full": "img/dataimg/2.jpg"
+    }
+      ],
       "infoHotspots": [
         {
           "yaw": 0.13027217344378705,
@@ -6108,6 +6148,14 @@ var APP_DATA = {
           "rotation": 0,
           "target": "1-18buffer1"
         }
+      ],
+      "imageHotspots": [
+    {
+      "yaw": -1.5435989871166278,
+      "pitch": 0.19813065011817166,
+      "preview": "img/dataimg/1.jpg",
+      "full": "img/dataimg/2.jpg"
+    }
       ],
       "infoHotspots": [
         {
@@ -6319,6 +6367,14 @@ var APP_DATA = {
         "fov": 1.38217411905719
       },
       "linkHotspots": [],
+      "imageHotspots": [
+    {
+      "yaw": -1.5435989871166278,
+      "pitch": 0.19813065011817166,
+      "preview": "img/dataimg/1.jpg",
+      "full": "img/dataimg/2.jpg"
+    }
+      ],
       "infoHotspots": [
         {
           "yaw": 0,
@@ -6391,6 +6447,14 @@ var APP_DATA = {
           "rotation": 3.141592653589793,
           "target": "1-20route1"
         }
+      ],
+      "imageHotspots": [
+    {
+      "yaw": -1.5435989871166278,
+      "pitch": 0.19813065011817166,
+      "preview": "img/dataimg/1.jpg",
+      "full": "img/dataimg/2.jpg"
+    }
       ],
       "infoHotspots": [
         {
@@ -6771,6 +6835,14 @@ var APP_DATA = {
           "target": "5-21route1"
         }
       ],
+      "imageHotspots": [
+    {
+      "yaw": -1.5435989871166278,
+      "pitch": 0.19813065011817166,
+      "preview": "img/dataimg/1.jpg",
+      "full": "img/dataimg/2.jpg"
+    }
+      ],
       "infoHotspots": [
         {
           "yaw": 0.262904315905347,
@@ -7149,6 +7221,14 @@ var APP_DATA = {
           "rotation": 3.141592653589793,
           "target": "1-22route1"
         }
+      ],
+      "imageHotspots": [
+    {
+      "yaw": -1.5435989871166278,
+      "pitch": 0.19813065011817166,
+      "preview": "img/dataimg/1.jpg",
+      "full": "img/dataimg/2.jpg"
+    }
       ],
       "infoHotspots": [
         {
@@ -7577,6 +7657,14 @@ var APP_DATA = {
           "target": "1-23route1"
         }
       ],
+      "imageHotspots": [
+    {
+      "yaw": -1.5435989871166278,
+      "pitch": 0.19813065011817166,
+      "preview": "img/dataimg/1.jpg",
+      "full": "img/dataimg/2.jpg"
+    }
+      ],
       "infoHotspots": [
         {
           "yaw": 1.8418581511122287,
@@ -7955,6 +8043,14 @@ var APP_DATA = {
           "rotation": 3.141592653589793,
           "target": "1-24route1"
         }
+      ],
+      "imageHotspots": [
+    {
+      "yaw": -1.5435989871166278,
+      "pitch": 0.19813065011817166,
+      "preview": "img/dataimg/1.jpg",
+      "full": "img/dataimg/2.jpg"
+    }
       ],
       "infoHotspots": [
         {
@@ -8383,6 +8479,14 @@ var APP_DATA = {
           "target": "1-25route1"
         }
       ],
+      "imageHotspots": [
+    {
+      "yaw": -1.5435989871166278,
+      "pitch": 0.19813065011817166,
+      "preview": "img/dataimg/1.jpg",
+      "full": "img/dataimg/2.jpg"
+    }
+      ],
       "infoHotspots": [
         {
           "yaw": -1.8253668415944588,
@@ -8804,6 +8908,14 @@ var APP_DATA = {
           "target": "4-26buffer4"
         }
       ],
+      "imageHotspots": [
+    {
+      "yaw": -1.5435989871166278,
+      "pitch": 0.19813065011817166,
+      "preview": "img/dataimg/1.jpg",
+      "full": "img/dataimg/2.jpg"
+    }
+      ],
       "infoHotspots": [
         {
           "yaw": -0.12856613299192077,
@@ -9044,6 +9156,14 @@ var APP_DATA = {
           "rotation": 3.141592653589793,
           "target": "1-27route1"
         }
+      ],
+      "imageHotspots": [
+    {
+      "yaw": -1.5435989871166278,
+      "pitch": 0.19813065011817166,
+      "preview": "img/dataimg/1.jpg",
+      "full": "img/dataimg/2.jpg"
+    }
       ],
       "infoHotspots": [
         {
@@ -9520,6 +9640,14 @@ var APP_DATA = {
           "target": "1-28route1"
         }
       ],
+      "imageHotspots": [
+    {
+      "yaw": -1.5435989871166278,
+      "pitch": 0.19813065011817166,
+      "preview": "img/dataimg/1.jpg",
+      "full": "img/dataimg/2.jpg"
+    }
+      ],
       "infoHotspots": [
         {
           "yaw": -1.2221825338330614,
@@ -9893,6 +10021,14 @@ var APP_DATA = {
           "target": "4-29buffer4"
         }
       ],
+      "imageHotspots": [
+    {
+      "yaw": -1.5435989871166278,
+      "pitch": 0.19813065011817166,
+      "preview": "img/dataimg/1.jpg",
+      "full": "img/dataimg/2.jpg"
+    }
+      ],
       "infoHotspots": [
         {
           "yaw": 1.495280079347019,
@@ -10133,6 +10269,14 @@ var APP_DATA = {
           "rotation": 3.141592653589793,
           "target": "1-30route2"
         }
+      ],
+      "imageHotspots": [
+    {
+      "yaw": -1.5435989871166278,
+      "pitch": 0.19813065011817166,
+      "preview": "img/dataimg/1.jpg",
+      "full": "img/dataimg/2.jpg"
+    }
       ],
       "infoHotspots": [
         {
@@ -10620,6 +10764,14 @@ var APP_DATA = {
         "fov": 1.38217411905719
       },
       "linkHotspots": [],
+      "imageHotspots": [
+    {
+      "yaw": -1.5435989871166278,
+      "pitch": 0.19813065011817166,
+      "preview": "img/dataimg/1.jpg",
+      "full": "img/dataimg/2.jpg"
+    }
+      ],
       "infoHotspots": [
         {
           "yaw": 0.439025216825792,
