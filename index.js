@@ -90,6 +90,10 @@ if (sceneData.imageHotspots) {
     scene.hotspotContainer().createHotspot(element, {
       yaw: hotspot.yaw,
       pitch: hotspot.pitch
+    }, {
+      perspective: {
+        radius: 3200
+      }
     });
   });
 }
