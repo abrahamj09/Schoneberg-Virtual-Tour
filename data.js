@@ -10568,8 +10568,8 @@ var APP_DATA = {
       "linkHotspots": [],
       "imageHotspots": [
     {
-      "yaw": 0.5,
-      "pitch": 0.1,
+      "yaw": -1.5435989871166278,
+      "pitch": 0.19813065011817166,
       "preview": "img/dataimg/1.jpg",
       "full": "img/dataimg/2.jpg"
     }
