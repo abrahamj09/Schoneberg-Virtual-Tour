@@ -280,7 +280,25 @@ sceneData.imageHotspots.forEach(function(hotspot) {
       startAutorotate();
     }
   }
+function createImageHotspotElement(hotspot) {
+  var wrapper = document.createElement('div');
+  wrapper.className = 'image-hotspot';
 
+  var img = document.createElement('img');
+  img.src = hotspot.preview;
+
+  wrapper.appendChild(img);
+
+  wrapper.addEventListener('click', function () {
+    var overlay = document.getElementById('image-overlay');
+    var overlayImg = document.getElementById('overlay-img');
+
+    overlayImg.src = hotspot.full;
+    overlay.classList.add('active');
+  });
+
+  return wrapper;
+}
   function createLinkHotspotElement(hotspot) {
     var wrapper = document.createElement('div');
     wrapper.classList.add('hotspot');
