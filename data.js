@@ -10573,6 +10573,13 @@ var APP_DATA = {
           "title": "Plot 32",
           "text": "Plot 32-"
         }
+       "imageHotspots": [
+    {
+      "yaw": 0.5,
+      "pitch": 0.1,
+      "preview": "img/dataimg/1.jpg",
+      "full": "img/dataimg/2.jpg"
+    }
       ]
     }
   ],
