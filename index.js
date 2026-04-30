@@ -9,7 +9,9 @@
   var screenfull = window.screenfull;
   var data = window.APP_DATA;
 
-  function addImageHotspot(scene, yaw, pitch, previewImg, fullImg) {
+function addImageHotspot(scene, yaw, pitch, previewImg, fullImg) {
+  if (!scene || !scene.hotspotContainer) return;
+
   var hotspot = document.createElement('div');
   hotspot.className = 'image-hotspot';
 
@@ -23,8 +25,10 @@
   });
 
   hotspot.addEventListener('click', function () {
-    const overlay = document.getElementById('image-overlay');
-    const overlayImg = document.getElementById('overlay-img');
+    var overlay = document.getElementById('image-overlay');
+    var overlayImg = document.getElementById('overlay-img');
+
+    if (!overlay || !overlayImg) return;
 
     overlayImg.src = fullImg;
     overlay.classList.add('active');
