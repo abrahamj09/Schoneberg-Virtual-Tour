@@ -414,7 +414,8 @@ function createImageHotspotElement(hotspot) {
   if (tourView) tourView.style.display = 'none';
 
   if (leafletMap) {
-    leafletMap.setView([53.005039, 14.126723], 14, {
+
+    leafletMap.flyTo([53.005039, 14.126723], 14, {
       duration: 1.2
     });
 
