@@ -523,3 +523,11 @@ addPlotMarker(53.006340, 14.114901, "31-32main", "32");
   showMapView();
 
 })();
+
+document.addEventListener("DOMContentLoaded", function () {
+  const overlay = document.getElementById("image-overlay");
+
+  overlay.addEventListener("click", function () {
+    overlay.classList.remove("active");
+  });
+});
