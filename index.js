@@ -9,16 +9,6 @@
   var screenfull = window.screenfull;
   var data = window.APP_DATA;
 
-  hotspot.addEventListener('click', function () {
-    var overlay = document.getElementById('image-overlay');
-    var overlayImg = document.getElementById('overlay-img');
-
-    if (!overlay || !overlayImg) return;
-
-    overlayImg.src = fullImg;
-    overlay.classList.add('active');
-  });
-}
   // Grab elements from DOM.
   var panoElement = document.querySelector('#pano');
   var sceneNameElement = document.querySelector('#titleBar .sceneName');
@@ -27,6 +17,7 @@
   var sceneListToggleElement = document.querySelector('#sceneListToggle');
   var autorotateToggleElement = document.querySelector('#autorotateToggle');
   var fullscreenToggleElement = document.querySelector('#fullscreenToggle');
+
 
   // Detect desktop or mobile mode.
   if (window.matchMedia) {
