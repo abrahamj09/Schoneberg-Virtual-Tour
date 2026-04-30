@@ -435,17 +435,10 @@ body.single-scene #sceneList, body.single-scene #sceneListToggle {
   display: block;
 }
 
-/* Image hotspot */
-.image-hotspot {
-  width: 120px;
-  margin-left: -60px;
-  margin-top: -60px;
-  opacity: 0.95;
-  transition: opacity 0.2s ease, transform 0.2s ease;
-  cursor: pointer;
-}
+
 /* =========================
-   IMAGE HOTSPOT BASE
+   IMAGE HOTSPOT BASE (SAFE)
+   - NO transform animation here (Marzipano-safe)
 ========================= */
 
 .image-hotspot {
@@ -453,13 +446,11 @@ body.single-scene #sceneList, body.single-scene #sceneListToggle {
   height: 60px;
   cursor: pointer;
   position: relative;
-  transform-origin: center;
-
-  /* calm floating */
-  animation: hotspot-float 4s ease-in-out infinite;
-
-  transition: transform 0.25s ease, filter 0.25s ease;
 }
+
+/* =========================
+   HOTSPOT IMAGE (FLOAT + LOOK)
+========================= */
 
 .image-hotspot img {
   width: 100%;
@@ -468,12 +459,16 @@ body.single-scene #sceneList, body.single-scene #sceneListToggle {
   display: block;
   pointer-events: auto;
 
-  /* subtle depth */
   filter: drop-shadow(0 4px 10px rgba(0,0,0,0.25));
+
+  /* calm floating animation ONLY on inner element */
+  animation: hotspot-float 4s ease-in-out infinite;
+
+  transition: transform 0.25s ease, filter 0.25s ease;
 }
 
 /* =========================
-   CALM FLOAT ANIMATION
+   CALM FLOAT
 ========================= */
 
 @keyframes hotspot-float {
@@ -483,23 +478,23 @@ body.single-scene #sceneList, body.single-scene #sceneListToggle {
 }
 
 /* =========================
-   DESKTOP HOVER EFFECT
+   DESKTOP HOVER (PREMIUM)
 ========================= */
 
-.no-touch .image-hotspot:hover {
+.no-touch .image-hotspot:hover img {
   animation: hotspot-hover 0.9s ease-in-out infinite;
-  transform: scale(1.12);
+  transform: scale(1.15);
   filter: drop-shadow(0 0 14px rgba(0, 200, 255, 0.8));
 }
 
 @keyframes hotspot-hover {
-  0%   { transform: translateY(0) scale(1.12); }
-  50%  { transform: translateY(-8px) scale(1.18); }
-  100% { transform: translateY(0) scale(1.12); }
+  0%   { transform: translateY(0) scale(1.15); }
+  50%  { transform: translateY(-8px) scale(1.2); }
+  100% { transform: translateY(0) scale(1.15); }
 }
 
 /* =========================
-   MOBILE / TOUCH BEHAVIOR
+   MOBILE SIZE + TAP FEEDBACK
 ========================= */
 
 .mobile .image-hotspot {
@@ -509,13 +504,13 @@ body.single-scene #sceneList, body.single-scene #sceneListToggle {
   margin-top: -60px;
 }
 
-.touch .image-hotspot:active {
+.touch .image-hotspot:active img {
   transform: scale(1.2);
   filter: drop-shadow(0 0 18px rgba(0, 200, 255, 0.9));
 }
 
 /* =========================
-   PREMIUM GLOW EFFECT
+   SOFT GLOW EFFECT
 ========================= */
 
 .image-hotspot::after {
@@ -533,6 +528,7 @@ body.single-scene #sceneList, body.single-scene #sceneListToggle {
   50%  { transform: scale(1.15); opacity: 0.7; }
   100% { transform: scale(0.95); opacity: 0.4; }
 }
+
 /* Info hotspot */
 
 .info-hotspot {
