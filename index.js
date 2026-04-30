@@ -456,14 +456,22 @@ function createImageHotspotElement(hotspot) {
   function addPlotMarker(lat, lon, targetSceneId, label) {
     var marker = L.marker([lat, lon]).addTo(leafletMap)
       .on('click', function() {
-        var targetScene = sceneById[targetSceneId];
-        if (targetScene) {
-          showTourView();
-          switchScene(targetScene);
-        } else {
-          console.warn('No scene found with id:', targetSceneId);
-        }
-      });
+  var targetScene = sceneById[targetSceneId];
+
+  if (targetScene) {
+
+    // STEP 1: animate zoom into marker
+    leafletMap.flyTo([lat, lon], 18, {
+      duration: 2
+    });
+
+    // STEP 2: after animation, enter tour
+    setTimeout(function() {
+      showTourView();
+      switchScene(targetScene);
+    }, 1800); // slightly longer than duration
+  }
+});
 
     if (label) {
       marker.bindTooltip(label, {
