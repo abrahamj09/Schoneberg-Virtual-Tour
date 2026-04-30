@@ -9,21 +9,6 @@
   var screenfull = window.screenfull;
   var data = window.APP_DATA;
 
-function addImageHotspot(scene, yaw, pitch, previewImg, fullImg) {
-  if (!scene || !scene.hotspotContainer) return;
-
-  var hotspot = document.createElement('div');
-  hotspot.className = 'image-hotspot';
-
-  var img = document.createElement('img');
-  img.src = previewImg;
-  hotspot.appendChild(img);
-
-  scene.hotspotContainer().createHotspot(hotspot, {
-    yaw: yaw,
-    pitch: pitch
-  });
-
   hotspot.addEventListener('click', function () {
     var overlay = document.getElementById('image-overlay');
     var overlayImg = document.getElementById('overlay-img');
