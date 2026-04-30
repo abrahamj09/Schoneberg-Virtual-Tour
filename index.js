@@ -102,6 +102,16 @@ function addImageHotspot(scene, yaw, pitch, previewImg, fullImg) {
       view: view,
       pinFirstLevel: true
     });
+    
+// Create Image hotspot 
+sceneData.imageHotspots.forEach(function(hotspot) {
+  var element = createImageHotspotElement(hotspot);
+
+  scene.hotspotContainer().createHotspot(element, {
+    yaw: hotspot.yaw,
+    pitch: hotspot.pitch
+  });
+});
 
     // Create link hotspots.
     sceneData.linkHotspots.forEach(function(hotspot) {
