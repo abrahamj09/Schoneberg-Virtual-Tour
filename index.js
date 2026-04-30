@@ -1,6 +1,28 @@
 /*
  * Copyright 2016 Google Inc. All rights reserved.
  */
+function addImageHotspot(scene, yaw, pitch, previewImg, fullImg) {
+  var hotspot = document.createElement('div');
+  hotspot.className = 'image-hotspot';
+
+  var img = document.createElement('img');
+  img.src = previewImg;
+  hotspot.appendChild(img);
+
+  scene.hotspotContainer().createHotspot(hotspot, {
+    yaw: yaw,
+    pitch: pitch
+  });
+
+  hotspot.addEventListener('click', function () {
+    const overlay = document.getElementById('image-overlay');
+    const overlayImg = document.getElementById('overlay-img');
+
+    overlayImg.src = fullImg;
+    overlay.classList.add('active');
+  });
+}
+
 'use strict';
 
 (function() {
