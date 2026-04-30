@@ -414,15 +414,15 @@ function createImageHotspotElement(hotspot) {
   if (tourView) tourView.style.display = 'none';
 
   if (leafletMap) {
-    leafletMap.setView([53.005039, 14.126723], 14 {
-  duration: 1.2
-})
+    leafletMap.setView([53.005039, 14.126723], 14, {
+      duration: 1.2
+    });
+
     setTimeout(function() {
       leafletMap.invalidateSize();
     }, 50);
   }
 }
-
   function showTourView() {
     if (mapView) mapView.style.display = 'none';
     if (tourView) tourView.style.display = 'block';
