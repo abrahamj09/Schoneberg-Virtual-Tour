@@ -32,7 +32,7 @@
     </div>
   </div>
 </div>
-
+  
   <!-- FULLSCREEN MAP VIEW -->
   <div id="map-view">
     <div id="map"></div>
@@ -46,6 +46,7 @@
     </a>
 
     <div id="pano"></div>
+    <div id="hint">Drag to explore</div>
 
     <div id="sceneList">
       <ul class="scenes">
@@ -159,6 +160,18 @@ document.getElementById("start-btn").onclick = function () {
     pano.style.opacity = "1";
     }, 200);
 });
+</script>
+
+  <script>
+  setTimeout(() => {
+    const hint = document.getElementById("hint");
+    if (hint) {
+      hint.style.opacity = "0";   // fade out smoothly
+      setTimeout(() => {
+        hint.style.display = "none"; // then remove
+      }, 500);
+    }
+  }, 4000);
 </script>
   
   <a href="https://econics.institute/en/" target="_blank">
