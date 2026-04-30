@@ -464,7 +464,7 @@ function createImageHotspotElement(hotspot) {
 
     // STEP 1: animate zoom into marker
     leafletMap.flyTo([lat, lon], 18, {
-      duration: 1.5
+      duration: 1
     });
 
     // STEP 2: after animation, enter tour
