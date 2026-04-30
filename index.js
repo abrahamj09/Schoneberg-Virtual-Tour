@@ -1,7 +1,15 @@
 /*
  * Copyright 2016 Google Inc. All rights reserved.
  */
-function addImageHotspot(scene, yaw, pitch, previewImg, fullImg) {
+'use strict';
+
+(function() {
+  var Marzipano = window.Marzipano;
+  var bowser = window.bowser;
+  var screenfull = window.screenfull;
+  var data = window.APP_DATA;
+
+  function addImageHotspot(scene, yaw, pitch, previewImg, fullImg) {
   var hotspot = document.createElement('div');
   hotspot.className = 'image-hotspot';
 
@@ -22,15 +30,6 @@ function addImageHotspot(scene, yaw, pitch, previewImg, fullImg) {
     overlay.classList.add('active');
   });
 }
-
-'use strict';
-
-(function() {
-  var Marzipano = window.Marzipano;
-  var bowser = window.bowser;
-  var screenfull = window.screenfull;
-  var data = window.APP_DATA;
-
   // Grab elements from DOM.
   var panoElement = document.querySelector('#pano');
   var sceneNameElement = document.querySelector('#titleBar .sceneName');
