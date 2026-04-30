@@ -1,154 +1,175 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="utf-8">
   <title>Virtual Tour</title>
-
+  <meta charset="utf-8">
   <meta name="viewport"
-        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+  <style> @-ms-viewport { width: device-width; } </style>
 
-  <style>@-ms-viewport { width: device-width; }</style>
-
-  <!-- Styles -->
+  <!-- Existing styles from Marzipano -->
   <link rel="stylesheet" href="vendor/reset.min.css">
   <link rel="stylesheet" href="style.css">
 
-  <!-- Leaflet -->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
-  <script src="https://unpkg.com/leaflet/dist/leaflet.js" defer></script>
+  <!-- Leaflet map CSS + JS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 </head>
 
 <body class="multiple-scenes view-control-buttons">
 
-  <!-- ===================== -->
   <!-- INTRO SCREEN -->
-  <!-- ===================== -->
   <div id="intro-screen">
-    <div id="intro-content">
-      <h1>Welcome to the Schöneberg Wild Forest Virtual Tour</h1>
-      <p>
-        This virtual experience showcases 32 ecological plots with immersive 360° views,
-        buffer zones, and access routes.
-      </p>
-
-      <button id="start-btn">Start Tour</button>
-
-      <div class="intro-footer">
-        This project is funded by the Umweltstiftung Michael Otto
-      </div>
+  <div id="intro-content">
+    <h1>Welcome to the Schöneberg Wild Forest Virtual Tour</h1>
+    <p>
+      This virtual experience showcases 32 ecological plots with immersive 360° views,
+      buffer zones, and access routes.
+    </p>
+    <button id="start-btn">Start Tour</button>
+        <div class="intro-footer">
+      This project is funded by the Umweltstiftung Michael Otto
     </div>
   </div>
-
-  <!-- ===================== -->
-  <!-- MAP VIEW -->
-  <!-- ===================== -->
+</div>
+  
+  <!-- FULLSCREEN MAP VIEW -->
   <div id="map-view">
     <div id="map"></div>
   </div>
 
-  <!-- ===================== -->
-  <!-- TOUR VIEW -->
-  <!-- ===================== -->
+  <!-- FULLSCREEN TOUR VIEW -->
   <div id="tour-view">
-
-    <a href="#" id="backToMapButton" class="map-button">🗺 Map</a>
+    <!-- Map button to go back to overview -->
+    <a href="javascript:void(0)" id="backToMapButton" class="map-button">
+      🗺 Map
+    </a>
 
     <div id="pano"></div>
     <div id="hint">Drag to explore</div>
 
     <div id="sceneList">
-      <ul class="scenes"></ul>
+      <ul class="scenes">
+        <!-- We leave this empty; scene list is optional -->
+      </ul>
     </div>
 
     <div id="titleBar">
       <h1 class="sceneName"></h1>
     </div>
 
-    <!-- Controls -->
-    <a href="#" id="autorotateToggle">
+    <a href="javascript:void(0)" id="autorotateToggle">
       <img class="icon off" src="img/play.png">
       <img class="icon on" src="img/pause.png">
     </a>
 
-    <a href="#" id="fullscreenToggle">
+    <a href="javascript:void(0)" id="fullscreenToggle">
       <img class="icon off" src="img/fullscreen.png">
       <img class="icon on" src="img/windowed.png">
     </a>
 
-    <a href="#" id="sceneListToggle">
+    <a href="javascript:void(0)" id="sceneListToggle">
       <img class="icon off" src="img/expand.png">
       <img class="icon on" src="img/collapse.png">
     </a>
 
-    <!-- View controls -->
-    <a href="#" id="viewUp" class="viewControlButton viewControlButton-1"><img src="img/up.png"></a>
-    <a href="#" id="viewDown" class="viewControlButton viewControlButton-2"><img src="img/down.png"></a>
-    <a href="#" id="viewLeft" class="viewControlButton viewControlButton-3"><img src="img/left.png"></a>
-    <a href="#" id="viewRight" class="viewControlButton viewControlButton-4"><img src="img/right.png"></a>
-    <a href="#" id="viewIn" class="viewControlButton viewControlButton-5"><img src="img/plus.png"></a>
-    <a href="#" id="viewOut" class="viewControlButton viewControlButton-6"><img src="img/minus.png"></a>
-
+    <a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1">
+      <img class="icon" src="img/up.png">
+    </a>
+    <a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2">
+      <img class="icon" src="img/down.png">
+    </a>
+    <a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3">
+      <img class="icon" src="img/left.png">
+    </a>
+    <a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4">
+      <img class="icon" src="img/right.png">
+    </a>
+    <a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5">
+      <img class="icon" src="img/plus.png">
+    </a>
+    <a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
+      <img class="icon" src="img/minus.png">
+    </a>
   </div>
 
-  <!-- ===================== -->
-  <!-- IMAGE OVERLAY -->
-  <!-- ===================== -->
-  <div id="image-overlay">
-    <img id="overlay-img" alt="Preview">
-  </div>
+  <!-- Marzipano libs -->
+  <script src="vendor/screenfull.min.js"></script>
+  <script src="vendor/bowser.min.js"></script>
+  <script src="vendor/marzipano.js"></script>
 
-  <!-- Logo -->
-  <a href="https://abrahamj09.github.io/Schoneberg-Virtual-Tour/" target="_blank">
-    <img src="img/logo.png" id="company-logo" alt="Logo">
-  </a>
+  <!-- Tour data + logic -->
+  <script src="data.js"></script>
+  <script src="index.js"></script>
 
-  <!-- ===================== -->
-  <!-- LIBS -->
-  <!-- ===================== -->
-  <script src="vendor/screenfull.min.js" defer></script>
-  <script src="vendor/bowser.min.js" defer></script>
-  <script src="vendor/marzipano.js" defer></script>
 
-  <!-- DATA + MAIN LOGIC -->
-  <script src="data.js" defer></script>
-  <script src="index.js" defer></script>
+  <!-- Image Modal -->
+<div id="imageModal" class="image-modal">
+  <span class="image-modal-close">&times;</span>
+  <img class="image-modal-content" id="modalImage">
+  <div id="modalCaption"></div>
+</div>
 
-  <!-- ===================== -->
-  <!-- APP INIT -->
-  <!-- ===================== -->
   <script>
-    document.addEventListener("DOMContentLoaded", () => {
+function openImage(src) {
+  const modal = document.createElement('div');
+  modal.style.position = 'fixed';
+  modal.style.top = 0;
+  modal.style.left = 0;
+  modal.style.width = '100%';
+  modal.style.height = '100%';
+  modal.style.background = 'rgba(0,0,0,0.8)';
+  modal.style.display = 'flex';
+  modal.style.alignItems = 'center';
+  modal.style.justifyContent = 'center';
+  modal.onclick = () => modal.remove();
 
-      const intro = document.getElementById("intro-screen");
-      const startBtn = document.getElementById("start-btn");
-      const pano = document.getElementById("pano");
-      const overlay = document.getElementById("image-overlay");
+  const img = document.createElement('img');
+  img.src = src;
+  img.style.maxWidth = '90%';
+  img.style.maxHeight = '90%';
 
-      // ---- START BUTTON ----
-      if (startBtn && intro) {
-        startBtn.addEventListener("click", () => {
-          intro.style.opacity = "0";
-          intro.style.pointerEvents = "none";
+  modal.appendChild(img);
+  document.body.appendChild(modal);
+}
+</script>
 
-          setTimeout(() => {
-            intro.style.display = "none";
-          }, 500);
+<!-- INTRO BUTTON SCRIPT -->
+<script>
+document.getElementById("start-btn").onclick = function () {
+  const intro = document.getElementById("intro-screen");
+  intro.style.opacity = "0";
+  setTimeout(() => intro.style.display = "none", 500);
+};
+</script>
+  
+  <script>
+  const intro = document.getElementById("intro-screen");
+  const btn = document.getElementById("start-btn");
 
-          if (pano) {
-            pano.style.opacity = "1";
-          }
-        });
-      }
+  btn.addEventListener("click", () => {
+  intro.style.opacity = "0";
+  intro.style.pointerEvents = "none";
 
-      // ---- IMAGE OVERLAY CLOSE ----
-      if (overlay) {
-        overlay.addEventListener("click", () => {
-          overlay.classList.remove("active");
-        });
-      }
+  setTimeout(() => {
+    intro.style.display = "none";
+  }, 600);
 
-    });
-  </script>
+  // fade in panorama
+  setTimeout(() => {
+    pano.style.opacity = "1";
+    }, 200);
+});
+</script>
 
+<!-- FULLSCREEN INSIDE IMAGE OVERLAY -->
+<div id="image-overlay">
+  <img id="overlay-img" />
+</div>
+  
+  <a href="https://abrahamj09.github.io/Schoneberg-Virtual-Tour/" target="_blank">
+  <img src="img/logo.png" id="company-logo" />
+</a>
+  
 </body>
 </html>
