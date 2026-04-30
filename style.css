@@ -442,8 +442,8 @@ body.single-scene #sceneList, body.single-scene #sceneListToggle {
 ========================= */
 
 .image-hotspot {
-  width: 120px;
-  height: 100px;
+  width: 250px;
+  height: 200px;
   cursor: pointer;
   position: relative;
 }
