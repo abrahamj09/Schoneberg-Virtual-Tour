@@ -534,7 +534,7 @@ addPlotMarker(53.006340, 14.114901, "31-32main", "32");
 
   // After all markers are added, center the map on first plot
   if (firstMarkerLatLng) {
-    leafletMap.setView([53.005039, 14.126723], 15);
+    leafletMap.setView([53.005039, 14.126723], 14);
   }
 
   // Start in MAP mode
