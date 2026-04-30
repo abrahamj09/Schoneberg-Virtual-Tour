@@ -2530,6 +2530,14 @@ var APP_DATA = {
           "target": "3-7buffer4"
         }
       ],
+      "imageHotspots": [
+    {
+      "yaw": -1.5435989871166278,
+      "pitch": 0.19813065011817166,
+      "preview": "img/dataimg/1.jpg",
+      "full": "img/dataimg/2.jpg"
+    }
+      ],
       "infoHotspots": [
         {
           "yaw": -0.5057107769649978,
@@ -2890,6 +2898,14 @@ var APP_DATA = {
           "rotation": 10.995574287564278,
           "target": "7-7route3"
         }
+      ],
+      "imageHotspots": [
+    {
+      "yaw": -1.5435989871166278,
+      "pitch": 0.19813065011817166,
+      "preview": "img/dataimg/1.jpg",
+      "full": "img/dataimg/2.jpg"
+    }
       ],
       "infoHotspots": []
     },
@@ -3335,6 +3351,14 @@ var APP_DATA = {
           "rotation": 0,
           "target": "4-9buffer4"
         }
+      ],
+      "imageHotspots": [
+    {
+      "yaw": -1.5435989871166278,
+      "pitch": 0.19813065011817166,
+      "preview": "img/dataimg/1.jpg",
+      "full": "img/dataimg/2.jpg"
+    }
       ],
       "infoHotspots": [
         {
@@ -3859,6 +3883,14 @@ var APP_DATA = {
           "target": "4-10buffer4"
         }
       ],
+      "imageHotspots": [
+    {
+      "yaw": -1.5435989871166278,
+      "pitch": 0.19813065011817166,
+      "preview": "img/dataimg/1.jpg",
+      "full": "img/dataimg/2.jpg"
+    }
+      ],
       "infoHotspots": [
         {
           "yaw": -0.5359346673902596,
@@ -4328,6 +4360,14 @@ var APP_DATA = {
           "target": "4-11buffer4"
         }
       ],
+      "imageHotspots": [
+    {
+      "yaw": -1.5435989871166278,
+      "pitch": 0.19813065011817166,
+      "preview": "img/dataimg/1.jpg",
+      "full": "img/dataimg/2.jpg"
+    }
+      ],
       "infoHotspots": [
         {
           "yaw": 0.3943978541393349,
@@ -4562,6 +4602,14 @@ var APP_DATA = {
           "rotation": 0,
           "target": "4-12buffer4"
         }
+      ],
+      "imageHotspots": [
+    {
+      "yaw": -1.5435989871166278,
+      "pitch": 0.19813065011817166,
+      "preview": "img/dataimg/1.jpg",
+      "full": "img/dataimg/2.jpg"
+    }
       ],
       "infoHotspots": [
         {
