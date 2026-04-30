@@ -462,14 +462,14 @@ function createImageHotspotElement(hotspot) {
 
     // STEP 1: animate zoom into marker
     leafletMap.flyTo([lat, lon], 18, {
-      duration: 2
+      duration: 1.5
     });
 
     // STEP 2: after animation, enter tour
     setTimeout(function() {
       showTourView();
       switchScene(targetScene);
-    }, 1800); // slightly longer than duration
+    }, 1600); // slightly longer than duration
   }
 });
 
