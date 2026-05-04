@@ -17,6 +17,8 @@
   var sceneListToggleElement = document.querySelector('#sceneListToggle');
   var autorotateToggleElement = document.querySelector('#autorotateToggle');
   var fullscreenToggleElement = document.querySelector('#fullscreenToggle');
+  var loader = document.getElementById("tour-loader");
+  var loaderText = document.getElementById("loader-text");
 
 
   // Detect desktop or mobile mode.
@@ -82,6 +84,13 @@
       view: view,
       pinFirstLevel: true
     });
+
+source.addEventListener('progress', function(e) {
+  if (loader && loaderText && e.lengthComputable) {
+    var percent = Math.round((e.loaded / e.total) * 100);
+    loaderText.innerText = percent + "%";
+  }
+});
 
     // Create Image hotspot 
 if (sceneData.imageHotspots) {
@@ -201,19 +210,33 @@ if (sceneData.imageHotspots) {
     return s.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;');
   }
 
-  function switchScene(scene) {
-    stopAutorotate();
-    scene.view.setParameters(scene.data.initialViewParameters);
-    scene.scene.switchTo();
-    startAutorotate();
-    updateSceneName(scene);
-    updateSceneList(scene);
+function switchScene(scene) {
 
-    // Fix black screen after visibility change
-    setTimeout(function() {
-      viewer.updateSize();
-    }, 50);
+  // 👉 SHOW loader
+  if (loader && loaderText) {
+    loader.style.display = "flex";
+    loaderText.innerText = "0%";
   }
+
+  stopAutorotate();
+
+  scene.view.setParameters(scene.data.initialViewParameters);
+  scene.scene.switchTo();
+
+  startAutorotate();
+  updateSceneName(scene);
+  updateSceneList(scene);
+
+  // 👉 FIX SIZE + HIDE LOADER AFTER LOAD
+  setTimeout(function() {
+    viewer.updateSize();
+
+    if (loader) {
+      loader.style.display = "none";
+    }
+
+  }, 800);
+}
 
   function updateSceneName(scene) {
     sceneNameElement.innerHTML = sanitize(scene.data.name);
@@ -463,20 +486,32 @@ function createImageHotspotElement(hotspot) {
   function addPlotMarker(lat, lon, targetSceneId, label) {
     var marker = L.marker([lat, lon]).addTo(leafletMap)
       .on('click', function() {
+
+  if (typeof loader !== "undefined" && loader) {
+    loader.style.display = "flex";
+  }
+
+  if (typeof loaderText !== "undefined" && loaderText) {
+    loaderText.innerText = "0%";
+  }
+
   var targetScene = sceneById[targetSceneId];
 
   if (targetScene) {
 
-    // STEP 1: animate zoom into marker
     leafletMap.flyTo([lat, lon], 18, {
       duration: 1
     });
 
-    // STEP 2: after animation, enter tour
     setTimeout(function() {
       showTourView();
       switchScene(targetScene);
-    }, 1600); // slightly longer than duration
+
+      setTimeout(function() {
+        if (loader) loader.style.display = "none";
+      }, 1000);
+
+    }, 1600);
   }
 });
 
