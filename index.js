@@ -85,13 +85,6 @@
       pinFirstLevel: true
     });
 
-source.addEventListener('progress', function(e) {
-  if (loader && loaderText && e.lengthComputable) {
-    var percent = Math.round((e.loaded / e.total) * 100);
-    loaderText.innerText = percent + "%";
-  }
-});
-
     // Create Image hotspot 
 if (sceneData.imageHotspots) {
   sceneData.imageHotspots.forEach(function(hotspot) {
@@ -213,9 +206,9 @@ if (sceneData.imageHotspots) {
 function switchScene(scene) {
 
   // 👉 SHOW loader
-  if (loader && loaderText) {
+  if (loader) {
     loader.style.display = "flex";
-    loaderText.innerText = "0%";
+    loaderText.innerText = "Loading...";
   }
 
   stopAutorotate();
@@ -227,15 +220,18 @@ function switchScene(scene) {
   updateSceneName(scene);
   updateSceneList(scene);
 
-  // 👉 FIX SIZE + HIDE LOADER AFTER LOAD
-  setTimeout(function() {
-    viewer.updateSize();
+  // 🔥 REAL FIX: wait until Marzipano finishes rendering first frame
+  requestAnimationFrame(function () {
+    requestAnimationFrame(function () {
 
-    if (loader) {
-      loader.style.display = "none";
-    }
+      viewer.updateSize();
 
-  }, 800);
+      if (loader) {
+        loader.style.display = "none";
+      }
+
+    });
+  });
 }
 
   function updateSceneName(scene) {
