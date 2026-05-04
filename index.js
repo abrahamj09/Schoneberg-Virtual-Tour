@@ -59,33 +59,6 @@
   // Initialize viewer.
   var viewer = new Marzipano.Viewer(panoElement, viewerOpts);
 
-  var totalTiles = 0;
-var loadedTiles = 0;
-
-viewer.stage().addEventListener('renderComplete', function () {
-  totalTiles++;
-});
-
-viewer.stage().addEventListener('textureLoad', function () {
-  loadedTiles++;
-
-  if (totalTiles > 0) {
-    var percent = Math.min(100, Math.round((loadedTiles / totalTiles) * 100));
-
-    document.getElementById("loader-text").innerText = percent + "%";
-
-    if (percent >= 100) {
-      setTimeout(function () {
-        var loader = document.getElementById("loader");
-        loader.style.opacity = "0";
-
-        setTimeout(function () {
-          loader.style.display = "none";
-        }, 500);
-      }, 300);
-    }
-  }
-});
 
   // Create scenes.
   var scenes = data.scenes.map(function(sceneData) {
