@@ -562,6 +562,17 @@ plotsButton.addEventListener("click", function () {
   plotsList.classList.toggle("open");
 });
 
+/* =========================
+   CUSTOM PLOTS MENU
+========================= */
+
+const plotsButton = document.getElementById("plotsButton");
+const plotsList = document.getElementById("plotsList");
+
+plotsButton.addEventListener("click", function () {
+  plotsList.classList.toggle("open");
+});
+
 /* CLICK PLOT -> SWITCH SCENE */
 
 document.querySelectorAll(".plot-item").forEach(function(item) {
