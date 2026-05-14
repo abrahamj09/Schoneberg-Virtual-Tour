@@ -1218,3 +1218,81 @@ html, body {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+
+/* ========================================
+   FULLSCREEN LOADER
+======================================== */
+
+#loading-screen {
+  position: fixed;
+  inset: 0;
+
+  display: none;
+
+  align-items: center;
+  justify-content: center;
+
+  z-index: 999999;
+
+  background: rgba(0,0,0,0.15);
+
+  backdrop-filter: blur(3px);
+}
+
+/* centered container */
+.loading-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 18px;
+}
+
+/* spinning logo */
+.loading-logo {
+  width: 90px;
+  height: 90px;
+
+  object-fit: contain;
+
+  animation: logoSpin 2.2s linear infinite;
+}
+
+/* spinner ring */
+.loading-spinner {
+  width: 42px;
+  height: 42px;
+
+  border-radius: 50%;
+
+  border: 3px solid rgba(255,255,255,0.15);
+  border-top: 3px solid white;
+
+  animation: spin 1s linear infinite;
+}
+
+/* loading text */
+#loading-percent {
+  font-size: 16px;
+  color: white;
+  font-weight: 600;
+
+  font-family: system-ui, sans-serif;
+
+  letter-spacing: 1px;
+}
+
+/* animations */
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes logoSpin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
