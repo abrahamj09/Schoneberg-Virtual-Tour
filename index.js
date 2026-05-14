@@ -246,9 +246,15 @@ function switchScene(scene) {
   }
 
   function toggleSceneList() {
-    sceneListElement.classList.toggle('enabled');
-    sceneListToggleElement.classList.toggle('enabled');
+  sceneListElement.classList.toggle('enabled');
+  sceneListToggleElement.classList.toggle('enabled');
+
+  if (sceneListElement.classList.contains('enabled')) {
+    sceneListToggleElement.innerText = "CLOSE";
+  } else {
+    sceneListToggleElement.innerText = "MENU";
   }
+}
 
   function startAutorotate() {
     if (!autorotateToggleElement.classList.contains('enabled')) {
