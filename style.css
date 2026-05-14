@@ -1183,3 +1183,40 @@ html, body {
   opacity: 0.6;
   font-size: 14px;
 }
+
+/* =========================
+   MODERN MENU BUTTON (GOOGLE MAPS STYLE)
+========================= */
+
+#sceneListToggle.menu-button {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  z-index: 9999;
+
+  padding: 10px 16px;
+
+  background: rgba(20, 20, 20, 0.75);
+  backdrop-filter: blur(10px);
+
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+
+  border-radius: 999px;
+
+  cursor: pointer;
+  user-select: none;
+
+  transition: transform 0.15s ease, background 0.2s ease;
+}
+
+#sceneListToggle.menu-button:hover {
+  transform: scale(1.05);
+  background: rgba(40, 40, 40, 0.85);
+}
+
+#sceneListToggle.menu-button:active {
+  transform: scale(0.97);
+}
