@@ -460,10 +460,14 @@ body.single-scene #sceneList, body.single-scene #sceneListToggle {
 
   filter: drop-shadow(0 4px 10px rgba(0,0,0,0.25));
 
-  /* calm floating animation ONLY on inner element */
   animation: hotspot-float 4s ease-in-out infinite;
 
-  transition: transform 0.25s ease, filter 0.25s ease;
+  transition: filter 0.25s ease;
+}
+
+.no-touch .image-hotspot:hover img {
+  animation: hotspot-hover 0.9s ease-in-out infinite;
+  filter: drop-shadow(0 0 14px rgba(0, 200, 255, 0.8));
 }
 
 /* =========================
@@ -999,16 +1003,20 @@ body.single-scene #sceneList, body.single-scene #sceneListToggle {
   align-items: center;
   justify-content: center;
 
-  /* deeper cinematic background */
-  background: radial-gradient(
+  background:
+    radial-gradient(
       circle at center,
       rgba(255,255,255,0.08),
       rgba(0,0,0,0.92)
     ),
-    url("img/intro.jpg"); /* optional but HIGHLY recommended */
+    url("img/intro.jpg");
+
   background-size: cover;
   background-position: center;
+
   backdrop-filter: blur(6px);
+
+  transition: opacity 0.6s ease;
 }
 
 .intro-card {
@@ -1076,9 +1084,6 @@ body.single-scene #sceneList, body.single-scene #sceneListToggle {
   margin-top: 18px;
   font-size: 12px;
   opacity: 0.45;
-}
-#intro-screen {
-  transition: opacity 0.6s ease;
 }
 
 #image-overlay {
