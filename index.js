@@ -17,8 +17,6 @@
   var sceneListToggleElement = document.querySelector('#sceneListToggle');
   var autorotateToggleElement = document.querySelector('#autorotateToggle');
   var fullscreenToggleElement = document.querySelector('#fullscreenToggle');
-  var loader = document.getElementById("tour-loader");
-  var loaderText = document.getElementById("loader-text");
 
 
   // Detect desktop or mobile mode.
@@ -205,32 +203,20 @@ if (sceneData.imageHotspots) {
 
 function switchScene(scene) {
 
-  // 👉 SHOW loader
-  if (loader) {
-    loader.style.display = "flex";
-    loaderText.innerText = "Loading...";
-  }
-
   stopAutorotate();
 
   scene.view.setParameters(scene.data.initialViewParameters);
+
   scene.scene.switchTo();
 
   startAutorotate();
+
   updateSceneName(scene);
+
   updateSceneList(scene);
 
-  // 🔥 REAL FIX: wait until Marzipano finishes rendering first frame
   requestAnimationFrame(function () {
-    requestAnimationFrame(function () {
-
-      viewer.updateSize();
-
-      if (loader) {
-        loader.style.display = "none";
-      }
-
-    });
+    viewer.updateSize();
   });
 }
 
@@ -483,14 +469,6 @@ function createImageHotspotElement(hotspot) {
     var marker = L.marker([lat, lon]).addTo(leafletMap)
       .on('click', function() {
 
-  if (typeof loader !== "undefined" && loader) {
-    loader.style.display = "flex";
-  }
-
-  if (typeof loaderText !== "undefined" && loaderText) {
-    loaderText.innerText = "0%";
-  }
-
   var targetScene = sceneById[targetSceneId];
 
   if (targetScene) {
@@ -502,11 +480,6 @@ function createImageHotspotElement(hotspot) {
     setTimeout(function() {
       showTourView();
       switchScene(targetScene);
-
-      setTimeout(function() {
-        if (loader) loader.style.display = "none";
-      }, 1000);
-
     }, 1600);
   }
 });
