@@ -1209,6 +1209,11 @@ html, body {
   backdrop-filter: blur(3px);
 }
 
+#loading-screen.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
 /* centered container */
 .loading-center {
   display: flex;
