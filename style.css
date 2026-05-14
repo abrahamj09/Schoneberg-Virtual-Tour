@@ -1198,3 +1198,54 @@ body.single-scene #sceneList, body.single-scene #sceneListToggle {
 #sceneListToggle.menu-button:active {
   transform: translateY(0px) scale(0.98);
 }
+
+.menu-group {
+  margin: 10px;
+}
+
+.menu-group-title {
+  padding: 10px 12px;
+  border-radius: 12px;
+
+  background: rgba(255,255,255,0.06);
+  backdrop-filter: blur(10px);
+
+  color: rgba(255,255,255,0.9);
+  font-size: 13px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.menu-submenu {
+  margin-top: 8px;
+  padding-left: 6px;
+
+  max-height: 0;
+  overflow: hidden;
+
+  transition: max-height 0.35s ease;
+}
+
+.menu-group.open .menu-submenu {
+  max-height: 600px;
+}
+
+.plot-item {
+  padding: 10px 12px;
+  margin: 6px 0;
+
+  border-radius: 10px;
+
+  color: rgba(255,255,255,0.8);
+  font-size: 13px;
+
+  cursor: pointer;
+
+  transition: background 0.15s ease, transform 0.15s ease;
+}
+
+.plot-item:hover {
+  background: rgba(255,255,255,0.08);
+  transform: translateX(3px);
+}
