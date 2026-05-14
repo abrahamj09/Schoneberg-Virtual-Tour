@@ -1132,45 +1132,34 @@ body.single-scene #sceneList, body.single-scene #sceneListToggle {
   position: absolute;
   top: 16px;
   left: 16px;
+
   z-index: 9999;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  min-width: 44px;
-  height: 44px;
-  padding: 0 14px;
+  padding: 12px 18px;
 
   border-radius: 14px;
 
-  background: rgba(25, 25, 28, 0.72);
-  backdrop-filter: blur(14px);
+  background: rgba(255,255,255,0.12);
 
-  color: rgba(255, 255, 255, 0.92);
-  font-size: 13px;
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+
+  border: 1px solid rgba(255,255,255,0.14);
+
+  color: white;
+
+  font-size: 14px;
   font-weight: 600;
-  letter-spacing: 0.6px;
-
-  border: 1px solid rgba(255, 255, 255, 0.08);
-
-  box-shadow:
-    0 10px 30px rgba(0, 0, 0, 0.35),
-    inset 0 1px 0 rgba(255, 255, 255, 0.06);
 
   cursor: pointer;
-  user-select: none;
 
-  transition: transform 0.18s ease, background 0.2s ease, box-shadow 0.2s ease;
+  transition: all 0.2s ease;
 }
 
-/* hover = subtle lift, not cartoon scaling */
 #sceneListToggle.menu-button:hover {
+  background: rgba(255,255,255,0.18);
+
   transform: translateY(-1px);
-  background: rgba(35, 35, 40, 0.85);
-  box-shadow:
-    0 14px 40px rgba(0, 0, 0, 0.45),
-    inset 0 1px 0 rgba(255, 255, 255, 0.08);
 }
 
 /* click feedback */
