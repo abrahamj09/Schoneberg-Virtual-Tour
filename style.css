@@ -1185,40 +1185,6 @@ html, body {
 }
 
 
-/* TOUR LOADING LOGO */
-#tour-loader {
-  position: fixed;
-  inset: 0;
-  z-index: 99999;
-
-  display: none;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  background: transparent;
-
-  text-align: center;
-}
-
-#loader-logo {
-  width: 80px;
-  height: 80px;
-  animation: spin 1s linear infinite;
-}
-
-#loader-text {
-  margin-top: 10px;
-  color: white;
-  font-size: 14px;
-  opacity: 0.8;
-}
-
-@keyframes spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-
 
 /* ========================================
    FULLSCREEN LOADER
@@ -1228,7 +1194,10 @@ html, body {
   position: fixed;
   inset: 0;
 
-  display: none;
+  ddisplay: flex;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
 
   align-items: center;
   justify-content: center;
