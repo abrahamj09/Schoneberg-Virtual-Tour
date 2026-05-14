@@ -551,6 +551,34 @@ addPlotMarker(53.006340, 14.114901, "31-32main", "32");
   // Start in MAP mode
   showMapView();
 
+/* =========================
+   PLOTS MENU LOGIC
+========================= */
+
+// 1. open/close submenu
+document.getElementById("plotsToggle").addEventListener("click", function () {
+  document.getElementById("plotsMenu").classList.toggle("open");
+});
+
+// 2. click plot → switch scene
+document.querySelectorAll(".plot-item").forEach(function (item) {
+
+  item.addEventListener("click", function () {
+
+    var sceneId = item.getAttribute("data-scene");
+
+    var targetScene = findSceneById(sceneId);
+
+    if (targetScene) {
+      switchScene(targetScene);
+    } else {
+      console.log("Scene not found:", sceneId);
+    }
+
+  });
+
+});
+  
 })();
 
 document.addEventListener("DOMContentLoaded", function () {
