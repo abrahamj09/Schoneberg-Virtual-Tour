@@ -1228,7 +1228,7 @@ body.single-scene #sceneList, body.single-scene #sceneListToggle {
 }
 
 .menu-group.open .menu-submenu {
-  max-height: 600px;
+  max-height: 700px;
 }
 
 .plot-item {
@@ -1275,14 +1275,6 @@ body.single-scene #sceneList, body.single-scene #sceneListToggle {
   background: rgba(255,255,255,0.12);
 }
 
-.menu-submenu {
-  display: none;
-  padding-left: 10px;
-}
-
-.menu-submenu.active {
-  display: block;
-}
 
 .plot-item {
   padding: 10px 14px;
