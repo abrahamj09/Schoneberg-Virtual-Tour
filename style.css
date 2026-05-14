@@ -1162,10 +1162,9 @@ body.single-scene #sceneList, body.single-scene #sceneListToggle {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 8px;
 
-  min-width: 44px;
-  height: 44px;
-  padding: 0 14px;
+  padding: 10px 14px;
 
   border-radius: 14px;
 
@@ -1175,7 +1174,6 @@ body.single-scene #sceneList, body.single-scene #sceneListToggle {
   color: rgba(255, 255, 255, 0.92);
   font-size: 13px;
   font-weight: 600;
-  letter-spacing: 0.6px;
 
   border: 1px solid rgba(255, 255, 255, 0.08);
 
@@ -1189,7 +1187,6 @@ body.single-scene #sceneList, body.single-scene #sceneListToggle {
   transition: transform 0.18s ease, background 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* hover = subtle lift, not cartoon scaling */
 #sceneListToggle.menu-button:hover {
   transform: translateY(-1px);
   background: rgba(35, 35, 40, 0.85);
@@ -1198,12 +1195,6 @@ body.single-scene #sceneList, body.single-scene #sceneListToggle {
     inset 0 1px 0 rgba(255, 255, 255, 0.08);
 }
 
-/* click feedback */
 #sceneListToggle.menu-button:active {
   transform: translateY(0px) scale(0.98);
-}
-
-/* optional icon spacing if you use text + icon */
-#sceneListToggle.menu-button .icon {
-  margin-right: 8px;
 }
