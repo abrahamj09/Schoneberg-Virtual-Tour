@@ -1261,3 +1261,37 @@ body.single-scene #sceneList, body.single-scene #sceneListToggle {
   background: transparent;
   pointer-events: none;
 }
+
+.menu-category {
+  padding: 12px 14px;
+  margin: 10px;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.06);
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.menu-category:hover {
+  background: rgba(255,255,255,0.12);
+}
+
+.menu-submenu {
+  display: none;
+  padding-left: 10px;
+}
+
+.menu-submenu.active {
+  display: block;
+}
+
+.plot-item {
+  padding: 10px 14px;
+  margin: 6px 10px;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.04);
+  cursor: pointer;
+}
+
+.plot-item:hover {
+  background: rgba(255,255,255,0.1);
+}
