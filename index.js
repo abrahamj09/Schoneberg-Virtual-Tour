@@ -200,7 +200,7 @@ if (sceneData.imageHotspots) {
   function sanitize(s) {
     return s.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;');
   }
-  
+
 function switchScene(scene) {
 
   stopAutorotate();
@@ -246,15 +246,9 @@ function switchScene(scene) {
   }
 
   function toggleSceneList() {
-  sceneListElement.classList.toggle('enabled');
-  sceneListToggleElement.classList.toggle('enabled');
-
-  if (sceneListElement.classList.contains('enabled')) {
-    sceneListToggleElement.innerText = "CLOSE";
-  } else {
-    sceneListToggleElement.innerText = "MENU";
+    sceneListElement.classList.toggle('enabled');
+    sceneListToggleElement.classList.toggle('enabled');
   }
-}
 
   function startAutorotate() {
     if (!autorotateToggleElement.classList.contains('enabled')) {
@@ -557,15 +551,6 @@ addPlotMarker(53.006340, 14.114901, "31-32main", "32");
   // Start in MAP mode
   showMapView();
 
-  const forestToggle = document.getElementById("forestToggle");
-const menuGroup = document.querySelector(".menu-group");
-
-if (forestToggle && menuGroup) {
-  forestToggle.addEventListener("click", function () {
-    menuGroup.classList.toggle("open");
-  });
-}
-  
 })();
 
 document.addEventListener("DOMContentLoaded", function () {
