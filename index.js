@@ -200,10 +200,6 @@ if (sceneData.imageHotspots) {
   function sanitize(s) {
     return s.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;');
   }
-
-  function togglePlots() {
-  document.querySelector(".menu-group").classList.toggle("open");
-}
   
 function switchScene(scene) {
 
@@ -561,6 +557,15 @@ addPlotMarker(53.006340, 14.114901, "31-32main", "32");
   // Start in MAP mode
   showMapView();
 
+  const forestToggle = document.getElementById("forestToggle");
+const menuGroup = document.querySelector(".menu-group");
+
+if (forestToggle && menuGroup) {
+  forestToggle.addEventListener("click", function () {
+    menuGroup.classList.toggle("open");
+  });
+}
+  
 })();
 
 document.addEventListener("DOMContentLoaded", function () {
