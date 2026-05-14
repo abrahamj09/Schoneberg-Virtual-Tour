@@ -18,17 +18,6 @@
 
 <body class="multiple-scenes view-control-buttons">
 
-  <div id="loading-screen">
-  <div class="loading-center">
-
-    <img src="img/logo.png" class="loading-logo">
-
-    <div class="loading-spinner"></div>
-
-    <div id="loading-percent">0%</div>
-
-  </div>
-</div>
 
   <!-- INTRO SCREEN -->
   <div id="intro-screen">
@@ -147,14 +136,7 @@ function openImage(src) {
 </script>
 
 <!-- INTRO BUTTON SCRIPT -->
-<script>
-document.getElementById("start-btn").onclick = function () {
-  const intro = document.getElementById("intro-screen");
-  intro.style.opacity = "0";
-  setTimeout(() => intro.style.display = "none", 500);
-};
-</script>
-  
+
   <script>
   const intro = document.getElementById("intro-screen");
   const btn = document.getElementById("start-btn");
@@ -183,12 +165,6 @@ document.getElementById("start-btn").onclick = function () {
   <img src="img/logo.png" id="company-logo" />
 </a>
 
-<div id="loader">
-  <div class="loader-content">
-    <img src="img/loading.png" id="loader-logo" />
-    <div id="loader-text">0%</div>
-  </div>
-</div>  
   
 </body>
 </html>
