@@ -201,6 +201,10 @@ if (sceneData.imageHotspots) {
     return s.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;');
   }
 
+  function togglePlots() {
+  document.querySelector(".menu-group").classList.toggle("open");
+}
+  
 function switchScene(scene) {
 
   stopAutorotate();
