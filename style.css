@@ -1182,3 +1182,77 @@ body.single-scene #sceneList, body.single-scene #sceneListToggle {
 #sceneListToggle.menu-button .icon {
   margin-right: 8px;
 }
+
+/* =========================
+   GLASS MENU INSIDE SIDEBAR
+========================= */
+
+#plotsSection {
+  margin: 10px;
+}
+
+/* MAIN TOGGLE (Plots button) */
+#plotsToggle {
+  padding: 12px 14px;
+
+  border-radius: 12px;
+
+  background: rgba(255,255,255,0.10);
+
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+
+  border: 1px solid rgba(255,255,255,0.12);
+
+  color: white;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+#plotsToggle:hover {
+  background: rgba(255,255,255,0.18);
+}
+
+/* SUBMENU (collapsed by default) */
+#plotsMenu {
+  max-height: 0;
+  overflow: hidden;
+
+  transition: max-height 0.35s ease;
+}
+
+/* OPEN STATE */
+#plotsMenu.open {
+  max-height: 900px;
+}
+
+/* EACH PLOT */
+.plot-item {
+  margin: 8px 0;
+
+  padding: 10px 12px;
+
+  border-radius: 10px;
+
+  background: rgba(255,255,255,0.06);
+
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  color: rgba(255,255,255,0.9);
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.plot-item:hover {
+  background: rgba(255,255,255,0.14);
+  transform: translateX(4px);
+}
