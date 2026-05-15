@@ -1214,14 +1214,29 @@ body.single-scene #sceneList, body.single-scene #sceneListToggle {
   background: rgba(255,255,255,0.18);
 }
 
-/* SUBMENU (collapsed by default) */
+/* =========================
+   SUBMENU CONTAINER
+========================= */
+
 #plotsMenu {
+
+  /* IMPORTANT: hidden by default */
+  max-height: 0;
+  overflow: hidden;
+
+  /* smooth animation */
+  transition: max-height 0.4s ease;
+
+  margin-top: 8px;
+
   background: rgba(255, 255, 255, 0.04);
 
   backdrop-filter: blur(35px);
   -webkit-backdrop-filter: blur(35px);
 
   border-left: 1px solid rgba(255,255,255,0.08);
+
+  border-radius: 12px;
 }
 
 /* OPEN STATE */
