@@ -276,9 +276,16 @@ body.fullscreen-enabled.mobile #autorotateToggle {
 }
 
 #sceneList .scenes {
-  width: 100%;
-  background-color: rgb(58,68,84);
-  background-color: rgba(58,68,84,0.8);
+  background: rgba(255, 255, 255, 0.06); /* VERY important */
+  
+  backdrop-filter: blur(28px);
+  -webkit-backdrop-filter: blur(28px);
+
+  border-right: 1px solid rgba(255, 255, 255, 0.10);
+
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+
+  -webkit-font-smoothing: antialiased;
 }
 
 .mobile #sceneList {
@@ -1193,24 +1200,14 @@ body.single-scene #sceneList, body.single-scene #sceneListToggle {
 
 /* MAIN TOGGLE (Plots button) */
 #plotsToggle {
-  padding: 12px 14px;
+  background: rgba(255, 255, 255, 0.08);
 
-  border-radius: 12px;
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
 
-  background: rgba(255,255,255,0.10);
+  border: 1px solid rgba(255, 255, 255, 0.12);
 
-  backdrop-filter: blur(18px);
-  -webkit-backdrop-filter: blur(18px);
-
-  border: 1px solid rgba(255,255,255,0.12);
-
-  color: white;
-
-  font-weight: 600;
-
-  cursor: pointer;
-
-  transition: 0.2s ease;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
 }
 
 #plotsToggle:hover {
@@ -1219,10 +1216,12 @@ body.single-scene #sceneList, body.single-scene #sceneListToggle {
 
 /* SUBMENU (collapsed by default) */
 #plotsMenu {
-  max-height: 0;
-  overflow: hidden;
+  background: rgba(255, 255, 255, 0.04);
 
-  transition: max-height 0.35s ease;
+  backdrop-filter: blur(35px);
+  -webkit-backdrop-filter: blur(35px);
+
+  border-left: 1px solid rgba(255,255,255,0.08);
 }
 
 /* OPEN STATE */
@@ -1232,24 +1231,14 @@ body.single-scene #sceneList, body.single-scene #sceneListToggle {
 
 /* EACH PLOT */
 .plot-item {
-  margin: 8px 0;
+  background: rgba(255, 255, 255, 0.05);
 
-  padding: 10px 12px;
-
-  border-radius: 10px;
-
-  background: rgba(255,255,255,0.06);
-
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
 
   border: 1px solid rgba(255,255,255,0.08);
 
-  color: rgba(255,255,255,0.9);
-
-  cursor: pointer;
-
-  transition: 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .plot-item:hover {
